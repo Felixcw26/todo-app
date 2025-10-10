@@ -1,0 +1,119 @@
+# ===============================
+# 🐍 Python Standard Ignored Files
+# ===============================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+.pyre/
+
+# Translations
+*.mo
+*.pot
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# ===============================
+# 🧰 Project Specific
+# ===============================
+
+# Local environment / IDE
+.vscode/
+.idea/
+.env/
+.venv/
+venv/
+env/
+*.swp
+
+# Temporary and backup files
+*.bak
+*.tmp
+*.log
+*.DS_Store
+Thumbs.db
+
+# # JSON data / test outputs
+# todos.json
+# tests/generated_*.json
+# *.cache.json
+# *.debug.json
+
+# ===============================
+# 💾 OS / Miscellaneous
+# ===============================
+.DS_Store
+*.icloud
+*.Trash
+*.localized
+
+# ===============================
+# 📦 Optional Extensions
+# ===============================
+
+# macOS + Python virtual environments
+*.pyenv
+*.mypy_cache/
+*.pyo
+*.pyd
+.pyre/
+.pytype/
+
+# ===============================
+# 🧪 Development Artifacts
+# ===============================
+tests/__pycache__/
+notebooks/
+sandbox/
+debug/
+
+# ===============================
+# 🧠 Editor Configs
+# ===============================
+*.code-workspace
+*.sublime-project
+*.sublime-workspace
+
+# ===============================
+# 🔮 Future GUI (Assets)
+# ===============================
+assets/icons/
+assets/tmp/
+gui_cache/
