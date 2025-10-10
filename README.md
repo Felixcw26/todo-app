@@ -178,7 +178,7 @@ Each task is a node, each dependency a logical link, forming a personal graph of
 
 ## 🪶 Author
 
-**Felix Winkler**
+**Felix Christoph Winkler**
 
 Physics student, developer, and admirer of structured aesthetics.
 Combines theoretical clarity with creative design in every project.
