@@ -1,0 +1,2714 @@
+{
+    "todos": [
+        {
+            "id": "b026802c-d8d3-4a01-b37d-6514513194da",
+            "title": "Task 1",
+            "category": "Reading",
+            "description": null,
+            "priority": "blocking",
+            "created_at": "10-10-2025",
+            "deadline": "10-11-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "creative",
+                "paper"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "91415f25-1d5f-446e-ba79-5e445b5a8c1e",
+                    "title": "Task 3"
+                }
+            ]
+        },
+        {
+            "id": "8b2fbf68-a4ce-4ef0-aa97-bff02a280e59",
+            "title": "Task 2",
+            "category": "Fraunhofer",
+            "description": null,
+            "priority": "optional",
+            "created_at": "10-10-2025",
+            "deadline": "10-14-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "91415f25-1d5f-446e-ba79-5e445b5a8c1e",
+                    "title": "Task 3"
+                }
+            ]
+        },
+        {
+            "id": "91415f25-1d5f-446e-ba79-5e445b5a8c1e",
+            "title": "Task 3",
+            "category": "Life",
+            "description": null,
+            "priority": "moderate",
+            "created_at": "10-10-2025",
+            "deadline": "10-12-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "b026802c-d8d3-4a01-b37d-6514513194da",
+                    "title": "Task 1"
+                },
+                {
+                    "id": "8b2fbf68-a4ce-4ef0-aa97-bff02a280e59",
+                    "title": "Task 2"
+                }
+            ],
+            "dependancy_of": [
+                {
+                    "id": "ff9834e4-0145-43c6-b1d1-1a86622dbf97",
+                    "title": "Task 5"
+                }
+            ]
+        },
+        {
+            "id": "ff07d84a-81e9-404f-8cc0-572ace12f937",
+            "title": "Task 4",
+            "category": "University",
+            "description": null,
+            "priority": "essential",
+            "created_at": "10-10-2025",
+            "deadline": "10-18-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "ff9834e4-0145-43c6-b1d1-1a86622dbf97",
+                    "title": "Task 5"
+                }
+            ]
+        },
+        {
+            "id": "ff9834e4-0145-43c6-b1d1-1a86622dbf97",
+            "title": "Task 5",
+            "category": "Life",
+            "description": null,
+            "priority": "essential",
+            "created_at": "10-10-2025",
+            "deadline": "11-2-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "creative",
+                "coding",
+                "health"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "91415f25-1d5f-446e-ba79-5e445b5a8c1e",
+                    "title": "Task 3"
+                },
+                {
+                    "id": "ff07d84a-81e9-404f-8cc0-572ace12f937",
+                    "title": "Task 4"
+                }
+            ],
+            "dependancy_of": [
+                {
+                    "id": "b06ea949-4f72-4370-a660-de7a2e32645c",
+                    "title": "Task 7"
+                }
+            ]
+        },
+        {
+            "id": "51ee2727-8afa-4a43-992f-7ba8a6ca36aa",
+            "title": "Task 6",
+            "category": "Philosophy",
+            "description": null,
+            "priority": "parked",
+            "created_at": "10-10-2025",
+            "deadline": "11-7-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "d6f5a7a3-80cb-495b-a618-5d66ae0f9dbb",
+                    "title": "Task 9"
+                }
+            ]
+        },
+        {
+            "id": "b06ea949-4f72-4370-a660-de7a2e32645c",
+            "title": "Task 7",
+            "category": "Fraunhofer",
+            "description": null,
+            "priority": "optional",
+            "created_at": "10-10-2025",
+            "deadline": "10-24-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "longterm",
+                "creative"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "ff9834e4-0145-43c6-b1d1-1a86622dbf97",
+                    "title": "Task 5"
+                }
+            ],
+            "dependancy_of": [
+                {
+                    "id": "b145e33e-18db-4aec-9d3d-21e178fa8080",
+                    "title": "Task 10"
+                }
+            ]
+        },
+        {
+            "id": "05e3e13a-6f7a-4793-ab76-b2ef813525ad",
+            "title": "Task 8",
+            "category": "Fraunhofer",
+            "description": null,
+            "priority": "parked",
+            "created_at": "10-10-2025",
+            "deadline": "10-21-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "79bf4509-ebda-4616-895e-9f37a29d73c2",
+                    "title": "Task 17"
+                }
+            ]
+        },
+        {
+            "id": "d6f5a7a3-80cb-495b-a618-5d66ae0f9dbb",
+            "title": "Task 9",
+            "category": "University",
+            "description": null,
+            "priority": "moderate",
+            "created_at": "10-10-2025",
+            "deadline": "10-14-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "paper",
+                "longterm"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "51ee2727-8afa-4a43-992f-7ba8a6ca36aa",
+                    "title": "Task 6"
+                }
+            ],
+            "dependancy_of": [
+                {
+                    "id": "b145e33e-18db-4aec-9d3d-21e178fa8080",
+                    "title": "Task 10"
+                }
+            ]
+        },
+        {
+            "id": "b145e33e-18db-4aec-9d3d-21e178fa8080",
+            "title": "Task 10",
+            "category": "Life",
+            "description": null,
+            "priority": "important",
+            "created_at": "10-10-2025",
+            "deadline": "11-5-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "b06ea949-4f72-4370-a660-de7a2e32645c",
+                    "title": "Task 7"
+                },
+                {
+                    "id": "d6f5a7a3-80cb-495b-a618-5d66ae0f9dbb",
+                    "title": "Task 9"
+                }
+            ],
+            "dependancy_of": [
+                {
+                    "id": "a513c7a9-43dd-436e-a4c7-ca1f9f00100e",
+                    "title": "Task 13"
+                }
+            ]
+        },
+        {
+            "id": "cef5e66e-b2d0-4930-973b-53ea1d115215",
+            "title": "Task 11",
+            "category": "Reading",
+            "description": null,
+            "priority": "moderate",
+            "created_at": "10-10-2025",
+            "deadline": "10-28-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "a513c7a9-43dd-436e-a4c7-ca1f9f00100e",
+                    "title": "Task 13"
+                }
+            ]
+        },
+        {
+            "id": "26df6323-29b1-4b18-99d2-655447f9f747",
+            "title": "Task 12",
+            "category": "Room",
+            "description": null,
+            "priority": "blocking",
+            "created_at": "10-10-2025",
+            "deadline": "10-28-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "paper",
+                "study"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "b3503b60-e28d-4975-9828-5b85ee2d4a7e",
+                    "title": "Task 34"
+                }
+            ]
+        },
+        {
+            "id": "a513c7a9-43dd-436e-a4c7-ca1f9f00100e",
+            "title": "Task 13",
+            "category": "Life",
+            "description": null,
+            "priority": "parked",
+            "created_at": "10-10-2025",
+            "deadline": "10-22-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "study"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "cef5e66e-b2d0-4930-973b-53ea1d115215",
+                    "title": "Task 11"
+                },
+                {
+                    "id": "b145e33e-18db-4aec-9d3d-21e178fa8080",
+                    "title": "Task 10"
+                }
+            ],
+            "dependancy_of": [
+                {
+                    "id": "2bc0f8e9-a7e7-4c70-9a7f-c4c8bbe3693e",
+                    "title": "Task 18"
+                }
+            ]
+        },
+        {
+            "id": "6961ca52-7e03-402b-8cb9-61dacf94f03f",
+            "title": "Task 14",
+            "category": "University",
+            "description": null,
+            "priority": "blocking",
+            "created_at": "10-10-2025",
+            "deadline": "11-1-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "paper"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "0a27a533-971b-4c82-ade9-6c94ad8b63bf",
+                    "title": "Task 28"
+                }
+            ]
+        },
+        {
+            "id": "ae88df87-f55b-4bb5-aad8-a56a9531d2a4",
+            "title": "Task 15",
+            "category": "Philosophy",
+            "description": null,
+            "priority": "blocking",
+            "created_at": "10-10-2025",
+            "deadline": "11-7-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "paper"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "79bf4509-ebda-4616-895e-9f37a29d73c2",
+                    "title": "Task 17"
+                }
+            ]
+        },
+        {
+            "id": "04eee73b-e364-4c3f-a882-422eff2ad467",
+            "title": "Task 16",
+            "category": "University",
+            "description": null,
+            "priority": "moderate",
+            "created_at": "10-10-2025",
+            "deadline": "10-19-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "study",
+                "longterm",
+                "creative"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "2bc0f8e9-a7e7-4c70-9a7f-c4c8bbe3693e",
+                    "title": "Task 18"
+                }
+            ]
+        },
+        {
+            "id": "79bf4509-ebda-4616-895e-9f37a29d73c2",
+            "title": "Task 17",
+            "category": "Philosophy",
+            "description": null,
+            "priority": "important",
+            "created_at": "10-10-2025",
+            "deadline": "10-17-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "study",
+                "paper"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "05e3e13a-6f7a-4793-ab76-b2ef813525ad",
+                    "title": "Task 8"
+                },
+                {
+                    "id": "ae88df87-f55b-4bb5-aad8-a56a9531d2a4",
+                    "title": "Task 15"
+                }
+            ],
+            "dependancy_of": [
+                {
+                    "id": "00457665-b604-4908-a1cb-7e5ba70f2f63",
+                    "title": "Task 20"
+                }
+            ]
+        },
+        {
+            "id": "2bc0f8e9-a7e7-4c70-9a7f-c4c8bbe3693e",
+            "title": "Task 18",
+            "category": "Reading",
+            "description": null,
+            "priority": "blocking",
+            "created_at": "10-10-2025",
+            "deadline": "10-30-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "health"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "04eee73b-e364-4c3f-a882-422eff2ad467",
+                    "title": "Task 16"
+                },
+                {
+                    "id": "a513c7a9-43dd-436e-a4c7-ca1f9f00100e",
+                    "title": "Task 13"
+                }
+            ],
+            "dependancy_of": [
+                {
+                    "id": "94514c1e-44b1-4d5b-b302-5ce44c96bc90",
+                    "title": "Task 42"
+                }
+            ]
+        },
+        {
+            "id": "17c263b8-2360-4ded-93fa-29e1dd448c7c",
+            "title": "Task 19",
+            "category": "Reading",
+            "description": null,
+            "priority": "essential",
+            "created_at": "10-10-2025",
+            "deadline": "10-16-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "coding",
+                "longterm",
+                "health"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "0a27a533-971b-4c82-ade9-6c94ad8b63bf",
+                    "title": "Task 28"
+                }
+            ]
+        },
+        {
+            "id": "00457665-b604-4908-a1cb-7e5ba70f2f63",
+            "title": "Task 20",
+            "category": "Fraunhofer",
+            "description": null,
+            "priority": "optional",
+            "created_at": "10-10-2025",
+            "deadline": "10-21-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "79bf4509-ebda-4616-895e-9f37a29d73c2",
+                    "title": "Task 17"
+                }
+            ],
+            "dependancy_of": [
+                {
+                    "id": "2a6e8e28-2fa9-44da-a0d0-aad183b6b976",
+                    "title": "Task 99"
+                }
+            ]
+        },
+        {
+            "id": "c7fdfe5e-2fde-4e19-872f-c673c6eb7e8d",
+            "title": "Task 21",
+            "category": "Fraunhofer",
+            "description": null,
+            "priority": "parked",
+            "created_at": "10-10-2025",
+            "deadline": "10-12-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "coding",
+                "longterm"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "0a27a533-971b-4c82-ade9-6c94ad8b63bf",
+                    "title": "Task 28"
+                }
+            ]
+        },
+        {
+            "id": "557ac9b8-5444-4da9-bdea-c39c9bc9b4c6",
+            "title": "Task 22",
+            "category": "University",
+            "description": null,
+            "priority": "essential",
+            "created_at": "10-10-2025",
+            "deadline": "11-9-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "creative",
+                "study"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "402f81fb-4a72-4d4f-b9dc-26c099980e30",
+                    "title": "Task 44"
+                }
+            ]
+        },
+        {
+            "id": "1887a457-cf83-4278-8dd8-6a7c5a0b0f67",
+            "title": "Task 23",
+            "category": "Room",
+            "description": null,
+            "priority": "moderate",
+            "created_at": "10-10-2025",
+            "deadline": "11-8-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "creative",
+                "longterm",
+                "paper"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "b82a80fb-d846-4cde-b5c9-a6bc6c0794e2",
+                    "title": "Task 29"
+                }
+            ]
+        },
+        {
+            "id": "ddd542e9-4469-4447-9901-7b144eb6d146",
+            "title": "Task 24",
+            "category": "Fraunhofer",
+            "description": null,
+            "priority": "optional",
+            "created_at": "10-10-2025",
+            "deadline": "10-28-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "study",
+                "health"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "73afd26e-40b5-48a9-bf16-630da88109ad",
+                    "title": "Task 67"
+                }
+            ]
+        },
+        {
+            "id": "a6ae53eb-bf04-4dec-a526-71c1de5804a3",
+            "title": "Task 25",
+            "category": "Room",
+            "description": null,
+            "priority": "background",
+            "created_at": "10-10-2025",
+            "deadline": "10-23-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "creative",
+                "paper"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "0d41f3fe-ff79-44fc-848f-0994491875fc",
+                    "title": "Task 47"
+                }
+            ]
+        },
+        {
+            "id": "39ee4284-6bb9-4757-9836-f3403e6369d8",
+            "title": "Task 26",
+            "category": "Life",
+            "description": null,
+            "priority": "moderate",
+            "created_at": "10-10-2025",
+            "deadline": "10-13-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "0e4b6577-1a6c-48d9-a82c-ed4187193fdc",
+                    "title": "Task 78"
+                }
+            ]
+        },
+        {
+            "id": "33fbe806-6200-4e2d-8bcd-ccf8de380962",
+            "title": "Task 27",
+            "category": "University",
+            "description": null,
+            "priority": "essential",
+            "created_at": "10-10-2025",
+            "deadline": "10-31-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "paper"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "a2106df5-3930-4d8d-a1d8-951b7423c073",
+                    "title": "Task 50"
+                }
+            ]
+        },
+        {
+            "id": "0a27a533-971b-4c82-ade9-6c94ad8b63bf",
+            "title": "Task 28",
+            "category": "Reading",
+            "description": null,
+            "priority": "moderate",
+            "created_at": "10-10-2025",
+            "deadline": "10-30-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "6961ca52-7e03-402b-8cb9-61dacf94f03f",
+                    "title": "Task 14"
+                },
+                {
+                    "id": "c7fdfe5e-2fde-4e19-872f-c673c6eb7e8d",
+                    "title": "Task 21"
+                },
+                {
+                    "id": "17c263b8-2360-4ded-93fa-29e1dd448c7c",
+                    "title": "Task 19"
+                }
+            ],
+            "dependancy_of": []
+        },
+        {
+            "id": "b82a80fb-d846-4cde-b5c9-a6bc6c0794e2",
+            "title": "Task 29",
+            "category": "Room",
+            "description": null,
+            "priority": "moderate",
+            "created_at": "10-10-2025",
+            "deadline": "10-30-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "health",
+                "longterm",
+                "paper"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "1887a457-cf83-4278-8dd8-6a7c5a0b0f67",
+                    "title": "Task 23"
+                }
+            ],
+            "dependancy_of": [
+                {
+                    "id": "4a275480-3518-419f-8531-18a054d5fd3e",
+                    "title": "Task 38"
+                }
+            ]
+        },
+        {
+            "id": "ebeed55f-883e-4be1-8377-ebfac5d913cb",
+            "title": "Task 30",
+            "category": "University",
+            "description": null,
+            "priority": "optional",
+            "created_at": "10-10-2025",
+            "deadline": "11-3-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "b3503b60-e28d-4975-9828-5b85ee2d4a7e",
+                    "title": "Task 34"
+                }
+            ]
+        },
+        {
+            "id": "a69985c1-b96d-46e9-abd6-8167aab3ca1a",
+            "title": "Task 31",
+            "category": "Reading",
+            "description": null,
+            "priority": "background",
+            "created_at": "10-10-2025",
+            "deadline": "11-4-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "paper",
+                "study"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "6ad553cf-4347-4e6c-920b-afb855e348fd",
+                    "title": "Task 54"
+                }
+            ]
+        },
+        {
+            "id": "b51f1aff-df7c-4359-a9c7-c7b443c8ca3e",
+            "title": "Task 32",
+            "category": "Philosophy",
+            "description": null,
+            "priority": "blocking",
+            "created_at": "10-10-2025",
+            "deadline": "10-20-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "creative",
+                "coding",
+                "urgent"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "e67a7a52-6db5-45c2-bfae-8406fb754aa3",
+                    "title": "Task 41"
+                }
+            ]
+        },
+        {
+            "id": "14d52ed6-cac8-47a9-8200-111c3a212988",
+            "title": "Task 33",
+            "category": "Reading",
+            "description": null,
+            "priority": "optional",
+            "created_at": "10-10-2025",
+            "deadline": "10-19-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "health"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "4a275480-3518-419f-8531-18a054d5fd3e",
+                    "title": "Task 38"
+                }
+            ]
+        },
+        {
+            "id": "b3503b60-e28d-4975-9828-5b85ee2d4a7e",
+            "title": "Task 34",
+            "category": "University",
+            "description": null,
+            "priority": "parked",
+            "created_at": "10-10-2025",
+            "deadline": "10-31-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "paper",
+                "study"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "26df6323-29b1-4b18-99d2-655447f9f747",
+                    "title": "Task 12"
+                },
+                {
+                    "id": "ebeed55f-883e-4be1-8377-ebfac5d913cb",
+                    "title": "Task 30"
+                }
+            ],
+            "dependancy_of": [
+                {
+                    "id": "f28a737b-f950-4aa1-953c-691c2311757f",
+                    "title": "Task 37"
+                }
+            ]
+        },
+        {
+            "id": "6e42b273-c685-462c-b4a0-df23e400303a",
+            "title": "Task 35",
+            "category": "Life",
+            "description": null,
+            "priority": "background",
+            "created_at": "10-10-2025",
+            "deadline": "10-17-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "longterm"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "a2106df5-3930-4d8d-a1d8-951b7423c073",
+                    "title": "Task 50"
+                }
+            ]
+        },
+        {
+            "id": "9a5d0901-f8f0-4cc1-b296-351b0da63cb8",
+            "title": "Task 36",
+            "category": "Fraunhofer",
+            "description": null,
+            "priority": "background",
+            "created_at": "10-10-2025",
+            "deadline": "11-4-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "09548862-a099-4a71-8c3d-b2871adf90ec",
+                    "title": "Task 39"
+                }
+            ]
+        },
+        {
+            "id": "f28a737b-f950-4aa1-953c-691c2311757f",
+            "title": "Task 37",
+            "category": "Life",
+            "description": null,
+            "priority": "important",
+            "created_at": "10-10-2025",
+            "deadline": "10-26-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "b3503b60-e28d-4975-9828-5b85ee2d4a7e",
+                    "title": "Task 34"
+                }
+            ],
+            "dependancy_of": [
+                {
+                    "id": "b58f9689-bed0-4bfc-9b64-c0f5c5067628",
+                    "title": "Task 64"
+                }
+            ]
+        },
+        {
+            "id": "4a275480-3518-419f-8531-18a054d5fd3e",
+            "title": "Task 38",
+            "category": "University",
+            "description": null,
+            "priority": "important",
+            "created_at": "10-10-2025",
+            "deadline": "11-8-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "creative",
+                "urgent"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "b82a80fb-d846-4cde-b5c9-a6bc6c0794e2",
+                    "title": "Task 29"
+                },
+                {
+                    "id": "14d52ed6-cac8-47a9-8200-111c3a212988",
+                    "title": "Task 33"
+                }
+            ],
+            "dependancy_of": [
+                {
+                    "id": "32a37f45-de82-44ba-8779-b088f15c1bba",
+                    "title": "Task 52"
+                }
+            ]
+        },
+        {
+            "id": "09548862-a099-4a71-8c3d-b2871adf90ec",
+            "title": "Task 39",
+            "category": "Fraunhofer",
+            "description": null,
+            "priority": "background",
+            "created_at": "10-10-2025",
+            "deadline": "10-13-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "9a5d0901-f8f0-4cc1-b296-351b0da63cb8",
+                    "title": "Task 36"
+                }
+            ],
+            "dependancy_of": []
+        },
+        {
+            "id": "d1fb6155-7467-4d49-a7e0-874a1a99392c",
+            "title": "Task 40",
+            "category": "Reading",
+            "description": null,
+            "priority": "moderate",
+            "created_at": "10-10-2025",
+            "deadline": "11-6-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "13f96877-0275-4971-8892-b26edc78a2f0",
+                    "title": "Task 62"
+                }
+            ]
+        },
+        {
+            "id": "e67a7a52-6db5-45c2-bfae-8406fb754aa3",
+            "title": "Task 41",
+            "category": "Life",
+            "description": null,
+            "priority": "parked",
+            "created_at": "10-10-2025",
+            "deadline": "10-15-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "study"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "b51f1aff-df7c-4359-a9c7-c7b443c8ca3e",
+                    "title": "Task 32"
+                }
+            ],
+            "dependancy_of": []
+        },
+        {
+            "id": "94514c1e-44b1-4d5b-b302-5ce44c96bc90",
+            "title": "Task 42",
+            "category": "Room",
+            "description": null,
+            "priority": "background",
+            "created_at": "10-10-2025",
+            "deadline": "10-16-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "health",
+                "paper"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "2bc0f8e9-a7e7-4c70-9a7f-c4c8bbe3693e",
+                    "title": "Task 18"
+                }
+            ],
+            "dependancy_of": [
+                {
+                    "id": "a5356a14-d784-4be5-9506-d1727b942cdf",
+                    "title": "Task 69"
+                }
+            ]
+        },
+        {
+            "id": "6923a29a-d910-4f6e-b2df-26c507eaa105",
+            "title": "Task 43",
+            "category": "Room",
+            "description": null,
+            "priority": "essential",
+            "created_at": "10-10-2025",
+            "deadline": "11-9-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "study"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "e468631c-a2e6-48ca-be81-656300447175",
+                    "title": "Task 60"
+                }
+            ]
+        },
+        {
+            "id": "402f81fb-4a72-4d4f-b9dc-26c099980e30",
+            "title": "Task 44",
+            "category": "Philosophy",
+            "description": null,
+            "priority": "moderate",
+            "created_at": "10-10-2025",
+            "deadline": "11-1-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "coding",
+                "health"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "557ac9b8-5444-4da9-bdea-c39c9bc9b4c6",
+                    "title": "Task 22"
+                }
+            ],
+            "dependancy_of": [
+                {
+                    "id": "e468631c-a2e6-48ca-be81-656300447175",
+                    "title": "Task 60"
+                }
+            ]
+        },
+        {
+            "id": "65198243-4c58-4b50-8757-275312a92278",
+            "title": "Task 45",
+            "category": "Room",
+            "description": null,
+            "priority": "blocking",
+            "created_at": "10-10-2025",
+            "deadline": "10-18-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "urgent"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "704a3836-62a8-460f-b721-657f5ad600f0",
+            "title": "Task 46",
+            "category": "Philosophy",
+            "description": null,
+            "priority": "blocking",
+            "created_at": "10-10-2025",
+            "deadline": "10-29-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "health"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "4b927e34-9c1e-4ae2-865a-68bd0103b199",
+                    "title": "Task 48"
+                }
+            ]
+        },
+        {
+            "id": "0d41f3fe-ff79-44fc-848f-0994491875fc",
+            "title": "Task 47",
+            "category": "Fraunhofer",
+            "description": null,
+            "priority": "blocking",
+            "created_at": "10-10-2025",
+            "deadline": "10-13-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "a6ae53eb-bf04-4dec-a526-71c1de5804a3",
+                    "title": "Task 25"
+                }
+            ],
+            "dependancy_of": [
+                {
+                    "id": "dee40cda-bb40-455d-955f-13e1eee2995b",
+                    "title": "Task 61"
+                }
+            ]
+        },
+        {
+            "id": "4b927e34-9c1e-4ae2-865a-68bd0103b199",
+            "title": "Task 48",
+            "category": "Fraunhofer",
+            "description": null,
+            "priority": "blocking",
+            "created_at": "10-10-2025",
+            "deadline": "11-8-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "704a3836-62a8-460f-b721-657f5ad600f0",
+                    "title": "Task 46"
+                }
+            ],
+            "dependancy_of": [
+                {
+                    "id": "3b2ef8d2-a3b0-45c2-9366-7d4249d41650",
+                    "title": "Task 56"
+                }
+            ]
+        },
+        {
+            "id": "9ec6648d-7c43-45a6-b5f8-baf7be0ba9a5",
+            "title": "Task 49",
+            "category": "Philosophy",
+            "description": null,
+            "priority": "blocking",
+            "created_at": "10-10-2025",
+            "deadline": "10-27-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "longterm"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "09d0b9c1-4451-4e9d-9d90-5fe58264f4b9",
+                    "title": "Task 55"
+                }
+            ]
+        },
+        {
+            "id": "a2106df5-3930-4d8d-a1d8-951b7423c073",
+            "title": "Task 50",
+            "category": "Reading",
+            "description": null,
+            "priority": "moderate",
+            "created_at": "10-10-2025",
+            "deadline": "10-17-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "study"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "33fbe806-6200-4e2d-8bcd-ccf8de380962",
+                    "title": "Task 27"
+                },
+                {
+                    "id": "6e42b273-c685-462c-b4a0-df23e400303a",
+                    "title": "Task 35"
+                }
+            ],
+            "dependancy_of": [
+                {
+                    "id": "32a37f45-de82-44ba-8779-b088f15c1bba",
+                    "title": "Task 52"
+                }
+            ]
+        },
+        {
+            "id": "ff56886e-eb18-453d-bfd9-b01993bb9d22",
+            "title": "Task 51",
+            "category": "Life",
+            "description": null,
+            "priority": "background",
+            "created_at": "10-10-2025",
+            "deadline": "10-26-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "paper"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "6dd0cb76-9973-40a5-b26b-57e760b37b45",
+                    "title": "Task 90"
+                }
+            ]
+        },
+        {
+            "id": "32a37f45-de82-44ba-8779-b088f15c1bba",
+            "title": "Task 52",
+            "category": "Room",
+            "description": null,
+            "priority": "parked",
+            "created_at": "10-10-2025",
+            "deadline": "10-24-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "urgent"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "a2106df5-3930-4d8d-a1d8-951b7423c073",
+                    "title": "Task 50"
+                },
+                {
+                    "id": "4a275480-3518-419f-8531-18a054d5fd3e",
+                    "title": "Task 38"
+                }
+            ],
+            "dependancy_of": [
+                {
+                    "id": "3b2ef8d2-a3b0-45c2-9366-7d4249d41650",
+                    "title": "Task 56"
+                }
+            ]
+        },
+        {
+            "id": "27b36875-4c81-4e3e-ad82-f2857af22c48",
+            "title": "Task 53",
+            "category": "University",
+            "description": null,
+            "priority": "optional",
+            "created_at": "10-10-2025",
+            "deadline": "10-24-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "coding",
+                "paper"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "6ad553cf-4347-4e6c-920b-afb855e348fd",
+            "title": "Task 54",
+            "category": "Room",
+            "description": null,
+            "priority": "parked",
+            "created_at": "10-10-2025",
+            "deadline": "11-3-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "a69985c1-b96d-46e9-abd6-8167aab3ca1a",
+                    "title": "Task 31"
+                }
+            ],
+            "dependancy_of": [
+                {
+                    "id": "dee40cda-bb40-455d-955f-13e1eee2995b",
+                    "title": "Task 61"
+                }
+            ]
+        },
+        {
+            "id": "09d0b9c1-4451-4e9d-9d90-5fe58264f4b9",
+            "title": "Task 55",
+            "category": "Reading",
+            "description": null,
+            "priority": "optional",
+            "created_at": "10-10-2025",
+            "deadline": "10-31-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "9ec6648d-7c43-45a6-b5f8-baf7be0ba9a5",
+                    "title": "Task 49"
+                }
+            ],
+            "dependancy_of": [
+                {
+                    "id": "73326716-5abd-4e7d-9bc7-21495d01e852",
+                    "title": "Task 95"
+                }
+            ]
+        },
+        {
+            "id": "3b2ef8d2-a3b0-45c2-9366-7d4249d41650",
+            "title": "Task 56",
+            "category": "University",
+            "description": null,
+            "priority": "moderate",
+            "created_at": "10-10-2025",
+            "deadline": "11-3-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "paper",
+                "urgent"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "4b927e34-9c1e-4ae2-865a-68bd0103b199",
+                    "title": "Task 48"
+                },
+                {
+                    "id": "32a37f45-de82-44ba-8779-b088f15c1bba",
+                    "title": "Task 52"
+                }
+            ],
+            "dependancy_of": [
+                {
+                    "id": "e21362f2-024c-4036-a556-9d976a216ba5",
+                    "title": "Task 98"
+                }
+            ]
+        },
+        {
+            "id": "9b78bd3c-65ba-461c-aeca-d73a40e21a7a",
+            "title": "Task 57",
+            "category": "Fraunhofer",
+            "description": null,
+            "priority": "essential",
+            "created_at": "10-10-2025",
+            "deadline": "10-17-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "creative",
+                "coding",
+                "paper"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "230afd62-2fb2-4e34-aa50-f41a6daceaf0",
+            "title": "Task 58",
+            "category": "Philosophy",
+            "description": null,
+            "priority": "moderate",
+            "created_at": "10-10-2025",
+            "deadline": "10-18-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "52d3b3aa-e497-4320-ba6a-719b904a3504",
+            "title": "Task 59",
+            "category": "Room",
+            "description": null,
+            "priority": "parked",
+            "created_at": "10-10-2025",
+            "deadline": "11-7-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "13f96877-0275-4971-8892-b26edc78a2f0",
+                    "title": "Task 62"
+                }
+            ]
+        },
+        {
+            "id": "e468631c-a2e6-48ca-be81-656300447175",
+            "title": "Task 60",
+            "category": "University",
+            "description": null,
+            "priority": "optional",
+            "created_at": "10-10-2025",
+            "deadline": "10-28-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "6923a29a-d910-4f6e-b2df-26c507eaa105",
+                    "title": "Task 43"
+                },
+                {
+                    "id": "402f81fb-4a72-4d4f-b9dc-26c099980e30",
+                    "title": "Task 44"
+                }
+            ],
+            "dependancy_of": [
+                {
+                    "id": "73afd26e-40b5-48a9-bf16-630da88109ad",
+                    "title": "Task 67"
+                }
+            ]
+        },
+        {
+            "id": "dee40cda-bb40-455d-955f-13e1eee2995b",
+            "title": "Task 61",
+            "category": "University",
+            "description": null,
+            "priority": "parked",
+            "created_at": "10-10-2025",
+            "deadline": "11-7-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "creative"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "0d41f3fe-ff79-44fc-848f-0994491875fc",
+                    "title": "Task 47"
+                },
+                {
+                    "id": "6ad553cf-4347-4e6c-920b-afb855e348fd",
+                    "title": "Task 54"
+                }
+            ],
+            "dependancy_of": [
+                {
+                    "id": "155b9a14-5c49-4451-a5b5-2f119c19cb8d",
+                    "title": "Task 81"
+                }
+            ]
+        },
+        {
+            "id": "13f96877-0275-4971-8892-b26edc78a2f0",
+            "title": "Task 62",
+            "category": "Room",
+            "description": null,
+            "priority": "moderate",
+            "created_at": "10-10-2025",
+            "deadline": "10-26-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "paper"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "52d3b3aa-e497-4320-ba6a-719b904a3504",
+                    "title": "Task 59"
+                },
+                {
+                    "id": "d1fb6155-7467-4d49-a7e0-874a1a99392c",
+                    "title": "Task 40"
+                }
+            ],
+            "dependancy_of": []
+        },
+        {
+            "id": "a868ccff-72d6-4680-8a4b-ce9ca9c3f4e7",
+            "title": "Task 63",
+            "category": "Room",
+            "description": null,
+            "priority": "blocking",
+            "created_at": "10-10-2025",
+            "deadline": "10-16-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "urgent",
+                "coding",
+                "longterm"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "b58f9689-bed0-4bfc-9b64-c0f5c5067628",
+            "title": "Task 64",
+            "category": "Room",
+            "description": null,
+            "priority": "important",
+            "created_at": "10-10-2025",
+            "deadline": "10-24-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "creative",
+                "paper",
+                "longterm"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "f28a737b-f950-4aa1-953c-691c2311757f",
+                    "title": "Task 37"
+                }
+            ],
+            "dependancy_of": []
+        },
+        {
+            "id": "cf742734-3171-4219-8e04-0b4382efc20a",
+            "title": "Task 65",
+            "category": "Fraunhofer",
+            "description": null,
+            "priority": "blocking",
+            "created_at": "10-10-2025",
+            "deadline": "10-29-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "7b5ebdf2-c620-448d-846a-f7c1fedbef16",
+                    "title": "Task 96"
+                }
+            ]
+        },
+        {
+            "id": "040c39be-0875-47b3-85de-f27b5bc161e7",
+            "title": "Task 66",
+            "category": "Reading",
+            "description": null,
+            "priority": "important",
+            "created_at": "10-10-2025",
+            "deadline": "10-12-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "73afd26e-40b5-48a9-bf16-630da88109ad",
+            "title": "Task 67",
+            "category": "Life",
+            "description": null,
+            "priority": "moderate",
+            "created_at": "10-10-2025",
+            "deadline": "10-27-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "urgent"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "e468631c-a2e6-48ca-be81-656300447175",
+                    "title": "Task 60"
+                },
+                {
+                    "id": "ddd542e9-4469-4447-9901-7b144eb6d146",
+                    "title": "Task 24"
+                }
+            ],
+            "dependancy_of": []
+        },
+        {
+            "id": "bd318b94-40ad-4349-a7db-d9ee36ff7be7",
+            "title": "Task 68",
+            "category": "Life",
+            "description": null,
+            "priority": "blocking",
+            "created_at": "10-10-2025",
+            "deadline": "11-7-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "urgent"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "a5356a14-d784-4be5-9506-d1727b942cdf",
+            "title": "Task 69",
+            "category": "Life",
+            "description": null,
+            "priority": "blocking",
+            "created_at": "10-10-2025",
+            "deadline": "11-1-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "coding"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "94514c1e-44b1-4d5b-b302-5ce44c96bc90",
+                    "title": "Task 42"
+                }
+            ],
+            "dependancy_of": [
+                {
+                    "id": "73326716-5abd-4e7d-9bc7-21495d01e852",
+                    "title": "Task 95"
+                }
+            ]
+        },
+        {
+            "id": "a39fa1f2-1be1-49e9-b4c3-85a179a2e63f",
+            "title": "Task 70",
+            "category": "University",
+            "description": null,
+            "priority": "background",
+            "created_at": "10-10-2025",
+            "deadline": "10-18-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "9bf2f7ee-7e7f-4852-92de-c467fbc85093",
+                    "title": "Task 74"
+                }
+            ]
+        },
+        {
+            "id": "4f2ad589-1111-49b7-8d7b-d55442ac12b8",
+            "title": "Task 71",
+            "category": "Life",
+            "description": null,
+            "priority": "blocking",
+            "created_at": "10-10-2025",
+            "deadline": "10-24-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "longterm",
+                "creative"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "d41c8336-9b7b-4c18-bae6-64569b15300e",
+            "title": "Task 72",
+            "category": "Reading",
+            "description": null,
+            "priority": "optional",
+            "created_at": "10-10-2025",
+            "deadline": "10-21-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "longterm"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "55492d5f-6fb5-4356-af46-bede6b456193",
+            "title": "Task 73",
+            "category": "Room",
+            "description": null,
+            "priority": "essential",
+            "created_at": "10-10-2025",
+            "deadline": "11-1-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "coding",
+                "longterm"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "9bf2f7ee-7e7f-4852-92de-c467fbc85093",
+            "title": "Task 74",
+            "category": "University",
+            "description": null,
+            "priority": "blocking",
+            "created_at": "10-10-2025",
+            "deadline": "10-25-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "a39fa1f2-1be1-49e9-b4c3-85a179a2e63f",
+                    "title": "Task 70"
+                }
+            ],
+            "dependancy_of": [
+                {
+                    "id": "bd40a133-6eda-4ae4-b0b3-87fffc2f258c",
+                    "title": "Task 89"
+                }
+            ]
+        },
+        {
+            "id": "94b1b370-2649-4fda-af16-835e90a8d415",
+            "title": "Task 75",
+            "category": "University",
+            "description": null,
+            "priority": "background",
+            "created_at": "10-10-2025",
+            "deadline": "10-17-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "creative",
+                "longterm"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "b2899dba-6069-4209-8141-1f7d54f99ebf",
+            "title": "Task 76",
+            "category": "University",
+            "description": null,
+            "priority": "essential",
+            "created_at": "10-10-2025",
+            "deadline": "10-22-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "creative",
+                "coding"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "84eee94a-ce0c-4dbc-8f8b-58dacf8ebf04",
+            "title": "Task 77",
+            "category": "Life",
+            "description": null,
+            "priority": "optional",
+            "created_at": "10-10-2025",
+            "deadline": "10-20-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "b76fb022-83e2-4fe3-b1e5-ea337890e884",
+                    "title": "Task 92"
+                }
+            ]
+        },
+        {
+            "id": "0e4b6577-1a6c-48d9-a82c-ed4187193fdc",
+            "title": "Task 78",
+            "category": "Reading",
+            "description": null,
+            "priority": "parked",
+            "created_at": "10-10-2025",
+            "deadline": "10-28-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "study",
+                "urgent"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "39ee4284-6bb9-4757-9836-f3403e6369d8",
+                    "title": "Task 26"
+                }
+            ],
+            "dependancy_of": []
+        },
+        {
+            "id": "d3520823-cb3d-48fa-a2c4-090084ef5278",
+            "title": "Task 79",
+            "category": "Fraunhofer",
+            "description": null,
+            "priority": "important",
+            "created_at": "10-10-2025",
+            "deadline": "10-14-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "a0fad489-679b-4c13-a772-1c4142005f34",
+            "title": "Task 80",
+            "category": "Reading",
+            "description": null,
+            "priority": "background",
+            "created_at": "10-10-2025",
+            "deadline": "10-15-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "longterm",
+                "health"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "155b9a14-5c49-4451-a5b5-2f119c19cb8d",
+            "title": "Task 81",
+            "category": "Fraunhofer",
+            "description": null,
+            "priority": "optional",
+            "created_at": "10-10-2025",
+            "deadline": "10-21-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "study"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "dee40cda-bb40-455d-955f-13e1eee2995b",
+                    "title": "Task 61"
+                }
+            ],
+            "dependancy_of": []
+        },
+        {
+            "id": "1b194676-0071-4897-8f6e-fac306b1e557",
+            "title": "Task 82",
+            "category": "Reading",
+            "description": null,
+            "priority": "parked",
+            "created_at": "10-10-2025",
+            "deadline": "10-19-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "longterm",
+                "urgent",
+                "study"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "9f0c787c-1b49-4ad9-ad2c-3527af6b34b1",
+            "title": "Task 83",
+            "category": "Reading",
+            "description": null,
+            "priority": "moderate",
+            "created_at": "10-10-2025",
+            "deadline": "11-6-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "urgent",
+                "paper"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "6b9ae39a-94cc-4a19-a109-8de8f20f202c",
+            "title": "Task 84",
+            "category": "Philosophy",
+            "description": null,
+            "priority": "parked",
+            "created_at": "10-10-2025",
+            "deadline": "10-15-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "creative",
+                "study"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "9ce97395-381e-486b-9d19-075a9e17f822",
+            "title": "Task 85",
+            "category": "Room",
+            "description": null,
+            "priority": "background",
+            "created_at": "10-10-2025",
+            "deadline": "11-2-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "health",
+                "urgent",
+                "study"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "9a542b64-c413-4d7f-9236-d624c0454377",
+            "title": "Task 86",
+            "category": "University",
+            "description": null,
+            "priority": "optional",
+            "created_at": "10-10-2025",
+            "deadline": "11-8-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "health"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "9aa4b4b3-b5b8-49bd-9afc-01292869663a",
+            "title": "Task 87",
+            "category": "University",
+            "description": null,
+            "priority": "parked",
+            "created_at": "10-10-2025",
+            "deadline": "10-22-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "coding"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "bd40a133-6eda-4ae4-b0b3-87fffc2f258c",
+                    "title": "Task 89"
+                }
+            ]
+        },
+        {
+            "id": "07db9a05-9577-4206-975e-05d337080623",
+            "title": "Task 88",
+            "category": "Fraunhofer",
+            "description": null,
+            "priority": "blocking",
+            "created_at": "10-10-2025",
+            "deadline": "10-20-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "paper",
+                "urgent"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "b76fb022-83e2-4fe3-b1e5-ea337890e884",
+                    "title": "Task 92"
+                }
+            ]
+        },
+        {
+            "id": "bd40a133-6eda-4ae4-b0b3-87fffc2f258c",
+            "title": "Task 89",
+            "category": "Philosophy",
+            "description": null,
+            "priority": "essential",
+            "created_at": "10-10-2025",
+            "deadline": "11-1-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "study"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "9bf2f7ee-7e7f-4852-92de-c467fbc85093",
+                    "title": "Task 74"
+                },
+                {
+                    "id": "9aa4b4b3-b5b8-49bd-9afc-01292869663a",
+                    "title": "Task 87"
+                }
+            ],
+            "dependancy_of": []
+        },
+        {
+            "id": "6dd0cb76-9973-40a5-b26b-57e760b37b45",
+            "title": "Task 90",
+            "category": "University",
+            "description": null,
+            "priority": "important",
+            "created_at": "10-10-2025",
+            "deadline": "11-4-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "health",
+                "study",
+                "creative"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "ff56886e-eb18-453d-bfd9-b01993bb9d22",
+                    "title": "Task 51"
+                }
+            ],
+            "dependancy_of": []
+        },
+        {
+            "id": "940bbc3d-1e8a-4cbc-8800-25c25b8fe07e",
+            "title": "Task 91",
+            "category": "Fraunhofer",
+            "description": null,
+            "priority": "parked",
+            "created_at": "10-10-2025",
+            "deadline": "10-16-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "coding"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "2a6e8e28-2fa9-44da-a0d0-aad183b6b976",
+                    "title": "Task 99"
+                }
+            ]
+        },
+        {
+            "id": "b76fb022-83e2-4fe3-b1e5-ea337890e884",
+            "title": "Task 92",
+            "category": "University",
+            "description": null,
+            "priority": "essential",
+            "created_at": "10-10-2025",
+            "deadline": "11-3-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "paper",
+                "coding"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "07db9a05-9577-4206-975e-05d337080623",
+                    "title": "Task 88"
+                },
+                {
+                    "id": "84eee94a-ce0c-4dbc-8f8b-58dacf8ebf04",
+                    "title": "Task 77"
+                }
+            ],
+            "dependancy_of": []
+        },
+        {
+            "id": "35bb187b-30a7-433d-b72d-f7e9bad45b44",
+            "title": "Task 93",
+            "category": "Reading",
+            "description": null,
+            "priority": "parked",
+            "created_at": "10-10-2025",
+            "deadline": "11-3-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "longterm"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "a0776735-4ff9-481f-b6e1-2416e1e83c63",
+            "title": "Task 94",
+            "category": "Fraunhofer",
+            "description": null,
+            "priority": "parked",
+            "created_at": "10-10-2025",
+            "deadline": "11-2-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "ecc79d32-afc2-40f9-ac7f-57dd70a5e4a3",
+                    "title": "Task 100"
+                }
+            ]
+        },
+        {
+            "id": "73326716-5abd-4e7d-9bc7-21495d01e852",
+            "title": "Task 95",
+            "category": "Room",
+            "description": null,
+            "priority": "parked",
+            "created_at": "10-10-2025",
+            "deadline": "10-12-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "creative",
+                "paper",
+                "coding"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "a5356a14-d784-4be5-9506-d1727b942cdf",
+                    "title": "Task 69"
+                },
+                {
+                    "id": "09d0b9c1-4451-4e9d-9d90-5fe58264f4b9",
+                    "title": "Task 55"
+                }
+            ],
+            "dependancy_of": []
+        },
+        {
+            "id": "7b5ebdf2-c620-448d-846a-f7c1fedbef16",
+            "title": "Task 96",
+            "category": "Philosophy",
+            "description": null,
+            "priority": "important",
+            "created_at": "10-10-2025",
+            "deadline": "11-6-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "creative"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "cf742734-3171-4219-8e04-0b4382efc20a",
+                    "title": "Task 65"
+                }
+            ],
+            "dependancy_of": []
+        },
+        {
+            "id": "4f93b427-59fa-4200-9230-f5e11801556d",
+            "title": "Task 97",
+            "category": "University",
+            "description": null,
+            "priority": "optional",
+            "created_at": "10-10-2025",
+            "deadline": "10-17-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "longterm",
+                "paper",
+                "urgent"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "e21362f2-024c-4036-a556-9d976a216ba5",
+            "title": "Task 98",
+            "category": "Philosophy",
+            "description": null,
+            "priority": "important",
+            "created_at": "10-10-2025",
+            "deadline": "10-31-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "study",
+                "health",
+                "longterm"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "3b2ef8d2-a3b0-45c2-9366-7d4249d41650",
+                    "title": "Task 56"
+                }
+            ],
+            "dependancy_of": []
+        },
+        {
+            "id": "2a6e8e28-2fa9-44da-a0d0-aad183b6b976",
+            "title": "Task 99",
+            "category": "University",
+            "description": null,
+            "priority": "blocking",
+            "created_at": "10-10-2025",
+            "deadline": "11-8-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "creative",
+                "health"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "940bbc3d-1e8a-4cbc-8800-25c25b8fe07e",
+                    "title": "Task 91"
+                },
+                {
+                    "id": "00457665-b604-4908-a1cb-7e5ba70f2f63",
+                    "title": "Task 20"
+                }
+            ],
+            "dependancy_of": []
+        },
+        {
+            "id": "ecc79d32-afc2-40f9-ac7f-57dd70a5e4a3",
+            "title": "Task 100",
+            "category": "Philosophy",
+            "description": null,
+            "priority": "blocking",
+            "created_at": "10-10-2025",
+            "deadline": "10-14-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "longterm",
+                "study",
+                "paper"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "a0776735-4ff9-481f-b6e1-2416e1e83c63",
+                    "title": "Task 94"
+                }
+            ],
+            "dependancy_of": []
+        }
+    ]
+}
