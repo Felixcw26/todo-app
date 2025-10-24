@@ -16,7 +16,7 @@ class ConsoleUI():
         self.filter_mode = None
         self.width = width
         self.save_paths = ("C:/Users/felixcipher/Documents/coding/todo-app/data/.todos.json", "C:/Users/felixcipher/Documents/coding/todo-app/data/.automations.json")
-        self.back = self.home_menu
+        self.back = []
 
         self.menu_actions = {
             "home_menu" : {
@@ -29,7 +29,11 @@ class ConsoleUI():
                 "e": [f"{self.theme.palette.SYMBOLS['WRITING']} (E) Edit ToDo", self.edit_todo_menu],
                 "s": [f"{self.theme.palette.SYMBOLS['GLASS']} (S) Show ToDo", self.show_todo_menu],
                 "c": [f"{self.theme.palette.SYMBOLS['CLIP']} (C) Change Status", self.change_status],
-                "backspace": [f"{self.theme.palette.SYMBOLS['LEFT_ARROW']} ({self.theme.palette.SYMBOLS['BACKSPACE']}) Go backck", self.back]
+                "backspace": [f"{self.theme.palette.SYMBOLS['LEFT_ARROW']} ({self.theme.palette.SYMBOLS['BACKSPACE']}) Go backck", lambda: self.back.pop(-1)()]
+            },
+            "change_status_menu": {
+                "backspace": [f"{self.theme.palette.SYMBOLS['LEFT_ARROW']} ({self.theme.palette.SYMBOLS['BACKSPACE']}) Go backck", lambda: self.back.pop(-1)()],
+                "enter": [f"{self.theme.palette.SYMBOLS['PEN']} ({self.theme.palette.SYMBOLS['ENTER']}) Submit", lambda: self.back.pop(-1)()]
             }
         }
 
@@ -149,6 +153,7 @@ class ConsoleUI():
                 if key:
                     key = key.lower()
                     if key in [key for key, _ in self.menu_actions[site].items()]:
+                        self.back.append(self.home_menu)
                         self.menu_actions[site][key][1]()
                         return
                     elif key in ("q", "esc"):
@@ -192,7 +197,7 @@ class ConsoleUI():
             Palette.init_colors()
 
             while True:
-                # --------- 1) INPUT LESEN (sofort Cursor anpassen) ----------
+                # --------- INPUT LESEN (sofort Cursor anpassen) ----------
                 key = listener.get_key()
                 if key:
                     kl = key.lower()
@@ -206,6 +211,7 @@ class ConsoleUI():
                         todos_all = self.todo_manager.list_all()
                         todos = [t for t in todos_all if (not t.done) or (t.done and Date.today() - t.completed_at <= 4)]
                         if todos:
+                            self.back.append(self.main_menu)
                             self.menu_actions[site][kl][1](todos[line_selected - 1])
                         # nach Aktion einfach weiterlaufen (Layout wird unten neu gebaut)
                     elif kl in ["up", "down"]:
@@ -224,7 +230,7 @@ class ConsoleUI():
                     elif kl in ("q", "esc"):
                         break
 
-                # --------- 2) LAYOUT JEDES MAL NEU BERECHNEN ----------
+                # --------- LAYOUT JEDES MAL NEU BERECHNEN ----------
                 # aktuelle Terminalgröße
                 self.height, self.width = stdscr.getmaxyx()[0] - 3, stdscr.getmaxyx()[1] - 4
                 self.theme.width = self.width
@@ -355,9 +361,9 @@ class ConsoleUI():
                     elif (not task.done) and (not task.in_progress) and task.is_overdue():
                         name_color = status_color = "RED"
                     elif (not task.done) and task.in_progress and task.is_overdue():
-                        name_color = status_color = "YELLOW"
+                        name_color = status_color = "DARK_ORANGE"
                     else:
-                        name_color = status_color = "GRAY"
+                        name_color = status_color = "LIGHT_ORANGE"
 
                     row = [
                         (s["EDGE_VERTICAL"], "IVORY", None),
@@ -381,7 +387,7 @@ class ConsoleUI():
                     ]
                     rows_segments.append(row)
 
-                # --------- 3) RENDER MIT AKTUELLER BREITE/HÖHE ----------
+                # --------- RENDER MIT AKTUELLER BREITE/HÖHE ----------
                 render_screen(stdscr, header_segments, upper_frame, title_frame,
                             middle_frame, rows_segments[n:n+visual_todos], lower_frame, footer_segments)
 
@@ -394,8 +400,156 @@ class ConsoleUI():
         return
     
     def change_status(self, todo: ToDo):
-        return
-    
+        site = "change_status_menu"
+        s = Palette.SYMBOLS
+
+        # Auswahlzeiger-Index (1-basiert)
+        line_selected = 1
+
+        # --- Render-Funktion: zeichnet NUR; keine Logik/State hier drin ---
+        def render_screen(stdscr, header_segments, horizontal, spacer, name_row, rows_segments, footer_segments, pad_top, pad_bottom):
+            stdscr.erase()
+            y = 0
+            for seg in header_segments:
+                self.render_segments(stdscr, y, seg)
+                y += 1
+            
+            self.render_segments(stdscr, y, [
+                (f"{s['BRANCHING_LEFT']}{horizontal}{s['BRANCHING_RIGHT']}", "IVORY", None)
+            ])
+            y += 1
+
+            for _ in range(pad_top - 2):
+                stdscr.addstr(y, 0, spacer, Palette.color("IVORY"))
+                y += 1
+            
+            self.render_segments(stdscr, y, name_row)
+            y += 1
+
+            stdscr.addstr(y, 0, spacer, Palette.color("IVORY"))
+            y += 1
+
+            for row in rows_segments:
+                self.render_segments(stdscr, y, row)
+                y += 1
+            
+            for _ in range(pad_bottom):
+                stdscr.addstr(y, 0, spacer, Palette.color("IVORY"))
+                y += 1
+            
+            self.render_segments(stdscr, y, [
+                (f"{s['BRANCHING_LEFT']}{horizontal}{s['BRANCHING_RIGHT']}", "IVORY", None)
+            ])
+            y += 1
+
+            for seg in footer_segments:
+                self.render_segments(stdscr, y, seg)
+                y += 1
+
+            stdscr.refresh()
+
+        with CursesKeyListener() as listener:
+            stdscr = listener.stdscr
+            Palette.init_colors()
+
+            while True:
+                # --------- INPUT LESEN (sofort Cursor anpassen) ----------
+                key = listener.get_key()
+                if key:
+                    kl = key.lower()
+                    if kl == "backspace" or kl == "a":
+                        self.menu_actions[site][kl][1]()
+                        # kehre zurueck, dieser Aufruf zeichnet sein eigenes UI
+                        return
+                        # nach Aktion einfach weiterlaufen (Layout wird unten neu gebaut)
+                    elif kl == "enter":
+                        if line_selected == 1:
+                            self.todo_manager.mark_done(todo.title, todo.id)
+                            self.menu_actions[site][kl][1]()
+                        if line_selected == 2:
+                            self.todo_manager.set_in_progress(todo.title, todo.id)
+                            self.menu_actions[site][kl][1]()
+                        if line_selected == 3:
+                            self.todo_manager.mark_undone(todo.title, todo.id)
+                            self.menu_actions[site][kl][1]()
+                    elif kl in ["up", "down"]:
+                        if kl == "up":
+                            line_selected = max(1, line_selected - 1)
+
+                        elif kl == "down":
+                            line_selected = min(3, line_selected + 1)
+
+                    elif kl in ("q", "esc"):
+                        break
+
+                # --------- LAYOUT JEDES MAL NEU BERECHNEN ----------
+                # aktuelle Terminalgröße
+                self.height, self.width = stdscr.getmaxyx()[0] - 1, stdscr.getmaxyx()[1] - 4
+                self.theme.width = self.width
+
+                header_segments = self.theme.header(f"{self.theme.palette.SYMBOLS['PEN']} Status Change")
+                footer_segments = self.theme.footer(value[0] for _, value in self.menu_actions[site].items())
+                horizontal = s['EDGE_HORIZONTAL'] * (self.width + 2)
+                spacer = self.theme._center_line()
+
+                inner_width = 15  # Breite deiner Box-Inhalte (ohne Rahmen)
+                total_space = self.width - inner_width
+                padding_left = total_space // 2
+                padding_right = total_space - padding_left
+
+                status_colors = ["GREEN" if todo.done else "WHITE", "YELLOW" if todo.in_progress and not todo.done else "WHITE", "RED" if not todo.done and not todo.in_progress else "WHITE"]
+
+                rows_segments = [
+                    [
+                        (f"{s['EDGE_VERTICAL']}" + padding_left * " ", "IVORY", None),
+                        (s['CORNER_LEFT_TOP'] + 15 * s['EDGE_HORIZONTAL'] + s['CORNER_RIGHT_TOP'], "IVORY", None),
+                        (padding_right * " " + f"{s['EDGE_VERTICAL']}" , "IVORY", None)
+                    ],
+                    [
+                        (f"{s['EDGE_VERTICAL']}" + padding_left * " ", "IVORY", None),
+                        (f"{s['EDGE_VERTICAL']} ", "IVORY", None),
+                        (f"{s['POINT_TRIANGLE']} " if line_selected == 1 else "  ", "WHITE", "BOLD"),
+                        (f"Done" + 8 * " ", status_colors[0], "BOLD"),
+                        (f"{s['EDGE_VERTICAL']}" + padding_right * " " + f"{s['EDGE_VERTICAL']}", "IVORY", None)
+                    ],
+                    [
+                        (f"{s['EDGE_VERTICAL']}" + padding_left * " ", "IVORY", None),
+                        (f"{s['EDGE_VERTICAL']} ", "IVORY", None),
+                        (f"{s['POINT_TRIANGLE']} " if line_selected == 2 else "  ", "WHITE", "BOLD"),
+                        (f"In Progress" + " ", status_colors[1], "BOLD"),
+                        (f"{s['EDGE_VERTICAL']}" + padding_right * " " + f"{s['EDGE_VERTICAL']}", "IVORY", None)
+                    ],
+                    [
+                        (f"{s['EDGE_VERTICAL']}" + padding_left * " ", "IVORY", None),
+                        (f"{s['EDGE_VERTICAL']} ", "IVORY", None),
+                        (f"{s['POINT_TRIANGLE']} " if line_selected == 3 else "  ", "WHITE", "BOLD"),
+                        (f"Undone" + 6 * " ", status_colors[2], "BOLD"),
+                        (f"{s['EDGE_VERTICAL']}" + padding_right * " " + f"{s['EDGE_VERTICAL']}", "IVORY", None)
+                    ],
+                    [
+                        (f"{s['EDGE_VERTICAL']}" + padding_left * " ", "IVORY", None),
+                        (s['CORNER_LEFT_BOTTOM'] + 15 * s['EDGE_HORIZONTAL'] + s['CORNER_RIGHT_BOTTOM'], "IVORY", None),
+                        (padding_right * " " + f"{s['EDGE_VERTICAL']}" , "IVORY", None)
+                    ]
+                ]
+
+                name_row = [
+                    (s["EDGE_VERTICAL"], "IVORY", None),
+                    (" " * ((self.width - len(todo.title)) // 2 + 1), "WHITE", None),
+                    (todo.title, "GOLD", "BOLD"),
+                    (" " * (((self.width - len(todo.title)) // 2) + 1 + ((self.width - len(todo.title)) % 2)), "WHITE", None),
+                    (s["EDGE_VERTICAL"], "IVORY", None)
+                ]
+
+                static_lines = len(header_segments) + len(footer_segments) + 2  # obere+untere Rahmenlinie
+                remaining = self.height - static_lines - len(rows_segments)
+                pad_top = remaining // 2
+                pad_bottom = (remaining - pad_top) + (remaining % 2)
+
+                render_screen(stdscr, header_segments, horizontal, spacer, name_row, rows_segments, footer_segments, pad_top, pad_bottom)
+
+                time.sleep(0.05)
+
     def show_todo_menu(self, todo: ToDo):
         return
     
