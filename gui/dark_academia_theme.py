@@ -17,7 +17,9 @@ class Palette:
         "GREEN": 107,
         "BLUE": 110,
         "WHITE": 231,
-        "YELLOW": 220
+        "YELLOW": 220, 
+        "DARK_ORANGE": 166, 
+        "LIGHT_ORANGE": 172
     }
 
     STYLES = {
@@ -63,7 +65,8 @@ class Palette:
         "POINT_SQUARE" : "⋅",
         "LONG_RIGHT_ARROW" : "⟶",
         "LONG_LEFT_ARROW" : "⟵",
-        "BACKSPACE" : "⌫"
+        "BACKSPACE" : "⌫",
+        "ENTER" : "Enter"
         
     }
 
