@@ -1,13 +1,13 @@
 if __name__ == "__main__":
     import random
-    from date_type import Date
-    from todo_type import Priority, ToDo
-    from todo_manager import ToDoManager
+    from core.date_type import Date
+    from core.todo_type import Priority, ToDo
+    from core.todo_manager import ToDoManager
 
     # --- Setup ---
     NUM_TASKS = 100
     random.seed(42)  # reproducibility
-    FILE_PATH = "/Users/felixcipher/Documents/coding/todo_app/"
+    FILE_PATH = "/Users/felixcipher/Documents/coding/todo-app/"
 
     categories = ["University", "Fraunhofer", "Philosophy", "Room", "Life", "Reading"]
     priorities = list(Priority.ALLOWED_PRIORITIES.keys())
