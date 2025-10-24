@@ -1,0 +1,1794 @@
+{
+    "todos": [
+        {
+            "id": "2218e841-3ab5-4075-9d87-e89c68ceff2d",
+            "title": "Read Chapter 1 of 'Thus Spoke Zarathustra'",
+            "category": "Reading",
+            "description": null,
+            "priority": "optional",
+            "created_at": "10-24-2025",
+            "deadline": "11-2-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "631e17c6-005c-4e88-a741-c8928571b0be",
+            "title": "Refactor Autoencoder Training Script",
+            "category": "Fraunhofer",
+            "description": null,
+            "priority": "optional",
+            "created_at": "10-24-2025",
+            "deadline": "10-28-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "health",
+                "analysis"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "053fc1e4-ee18-4292-8104-94b3806bc85f",
+            "title": "Revise Electrodynamics \u2014 Chapter 7",
+            "category": "University",
+            "description": null,
+            "priority": "blocking",
+            "created_at": "10-24-2025",
+            "deadline": "10-25-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "deedc09e-46b5-45a4-9733-514cca6bc8dd",
+                    "title": "Summarize insights from 'Being and Time'"
+                }
+            ],
+            "dependancy_of": []
+        },
+        {
+            "id": "af946158-682c-410c-a946-b93c7fade2c5",
+            "title": "Refactor Autoencoder Training Script",
+            "category": "Fraunhofer",
+            "description": null,
+            "priority": "background",
+            "created_at": "10-24-2025",
+            "deadline": "11-13-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "45aad75b-30c8-4d18-a948-56a074aabdb4",
+            "title": "Laundry",
+            "category": "Life",
+            "description": null,
+            "priority": "optional",
+            "created_at": "10-24-2025",
+            "deadline": "11-14-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "analysis",
+                "routine"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "9a970b11-c510-45dd-82af-dcf79b2cf0dd",
+            "title": "Read Google Nature 2024 Paper",
+            "category": "Fraunhofer",
+            "description": null,
+            "priority": "background",
+            "created_at": "10-24-2025",
+            "deadline": "11-2-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "76bc608c-cac5-4487-bf21-cd211d8c6973",
+            "title": "Implement LSTM Model for Decoding",
+            "category": "Fraunhofer",
+            "description": null,
+            "priority": "moderate",
+            "created_at": "10-24-2025",
+            "deadline": "11-4-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "creative"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "1e84c705-da7d-4fb3-9867-1c0c5f28aa04",
+            "title": "Run Evaluation on Validation Dataset",
+            "category": "Fraunhofer",
+            "description": null,
+            "priority": "important",
+            "created_at": "10-24-2025",
+            "deadline": "10-28-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "17a4ee60-de63-4bff-82ec-79d537904369",
+            "title": "Organize Bookshelf \u2014 Section 6",
+            "category": "Room",
+            "description": null,
+            "priority": "parked",
+            "created_at": "10-24-2025",
+            "deadline": "11-5-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "deep",
+                "urgent"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "deedc09e-46b5-45a4-9733-514cca6bc8dd",
+            "title": "Summarize insights from 'Being and Time'",
+            "category": "Reading",
+            "description": null,
+            "priority": "background",
+            "created_at": "10-24-2025",
+            "deadline": "10-28-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "urgent"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "01734488-b4a3-430d-b8d6-c9f7d0418377",
+                    "title": "Read Chapter 10 of 'Thus Spoke Zarathustra'"
+                }
+            ],
+            "dependancy_of": [
+                {
+                    "id": "053fc1e4-ee18-4292-8104-94b3806bc85f",
+                    "title": "Revise Electrodynamics \u2014 Chapter 7"
+                }
+            ]
+        },
+        {
+            "id": "b47f14d3-6bff-45c5-aa1b-acb118f75397",
+            "title": "Call parents",
+            "category": "Life",
+            "description": null,
+            "priority": "parked",
+            "created_at": "10-24-2025",
+            "deadline": "11-14-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "writing",
+                "deep"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "ca82bd8b-86b0-4b7a-a316-31bb2626ce8c",
+            "title": "Laundry",
+            "category": "Life",
+            "description": null,
+            "priority": "optional",
+            "created_at": "10-24-2025",
+            "deadline": "10-27-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "fd0b2cff-8cec-4ef4-a351-ca56d0355a30",
+            "title": "Study Chapter 5 of Feynman Lectures",
+            "category": "Reading",
+            "description": null,
+            "priority": "blocking",
+            "created_at": "10-24-2025",
+            "deadline": "11-21-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "d891c9cb-4a04-4fd7-91f6-122440d188b3",
+            "title": "Review Quantum Mechanics Notes",
+            "category": "University",
+            "description": null,
+            "priority": "important",
+            "created_at": "10-24-2025",
+            "deadline": "11-8-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "writing",
+                "deep"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "8b81feeb-9fd9-4ea6-9216-22899a07a253",
+                    "title": "Write Lab Report: Experiment 1"
+                }
+            ],
+            "dependancy_of": []
+        },
+        {
+            "id": "f14369ae-60f8-484e-9f7e-a6dab97b9834",
+            "title": "Analyze Detection Events for Surface Code",
+            "category": "Fraunhofer",
+            "description": null,
+            "priority": "important",
+            "created_at": "10-24-2025",
+            "deadline": "10-31-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "deep",
+                "health"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "08ce25a7-00dc-4180-9f58-f407809332c7",
+                    "title": "Implement LSTM Model for Decoding"
+                }
+            ],
+            "dependancy_of": []
+        },
+        {
+            "id": "01734488-b4a3-430d-b8d6-c9f7d0418377",
+            "title": "Read Chapter 10 of 'Thus Spoke Zarathustra'",
+            "category": "Reading",
+            "description": null,
+            "priority": "optional",
+            "created_at": "10-24-2025",
+            "deadline": "10-30-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "health",
+                "creative"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "deedc09e-46b5-45a4-9733-514cca6bc8dd",
+                    "title": "Summarize insights from 'Being and Time'"
+                }
+            ]
+        },
+        {
+            "id": "76f4d106-0465-4e57-8472-1e55f12199b4",
+            "title": "Read Google Nature 2024 Paper",
+            "category": "Fraunhofer",
+            "description": null,
+            "priority": "moderate",
+            "created_at": "10-24-2025",
+            "deadline": "11-2-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "health",
+                "analysis"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "b6ed562c-fe1b-47b5-b9f9-0208a88740bd",
+                    "title": "Summarize insights from 'Being and Time'"
+                }
+            ]
+        },
+        {
+            "id": "08ce25a7-00dc-4180-9f58-f407809332c7",
+            "title": "Implement LSTM Model for Decoding",
+            "category": "Fraunhofer",
+            "description": null,
+            "priority": "important",
+            "created_at": "10-24-2025",
+            "deadline": "11-20-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "f14369ae-60f8-484e-9f7e-a6dab97b9834",
+                    "title": "Analyze Detection Events for Surface Code"
+                }
+            ]
+        },
+        {
+            "id": "0292b06b-ca7f-44c1-9a8c-21048f4d3bf5",
+            "title": "Run Evaluation on Validation Dataset",
+            "category": "Fraunhofer",
+            "description": null,
+            "priority": "blocking",
+            "created_at": "10-24-2025",
+            "deadline": "11-19-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "routine"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "660ab5e1-9a6f-4d0e-be3e-39e15b2a8c2c",
+            "title": "Write essay: 'Freedom and Necessity'",
+            "category": "Philosophy",
+            "description": null,
+            "priority": "essential",
+            "created_at": "10-24-2025",
+            "deadline": "11-23-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "health",
+                "deep"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "e87e9c7a-c340-4f0e-a3d9-c07a840ad490",
+            "title": "Implement LSTM Model for Decoding",
+            "category": "Fraunhofer",
+            "description": null,
+            "priority": "moderate",
+            "created_at": "10-24-2025",
+            "deadline": "11-6-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "routine",
+                "creative"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "b0d3aa27-3380-42c1-bb34-0a4a24247ac8",
+            "title": "Draft notes on Nietzsche\u2019s 'Genealogy of Morals'",
+            "category": "Philosophy",
+            "description": null,
+            "priority": "essential",
+            "created_at": "10-24-2025",
+            "deadline": "11-17-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "analysis",
+                "deep"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "687948ca-14da-4b43-86ad-c68e905a99ea",
+                    "title": "Revise manuscript 'The Shadow and the Light'"
+                }
+            ]
+        },
+        {
+            "id": "077b70e7-e9b7-41dc-9aea-bbc8e5f8f837",
+            "title": "Finish novel 'Crime and Punishment'",
+            "category": "Reading",
+            "description": null,
+            "priority": "moderate",
+            "created_at": "10-24-2025",
+            "deadline": "11-22-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "routine",
+                "deep"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "8941bbf7-568e-4b65-9941-6c8f8310fd89",
+            "title": "Refactor Autoencoder Training Script",
+            "category": "Fraunhofer",
+            "description": null,
+            "priority": "background",
+            "created_at": "10-24-2025",
+            "deadline": "11-9-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "e34544ec-4ca7-4674-b408-4ae01c90eacd",
+            "title": "Attend Study Group (Theo3)",
+            "category": "University",
+            "description": null,
+            "priority": "blocking",
+            "created_at": "10-24-2025",
+            "deadline": "10-29-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "creative",
+                "health"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "97cdbf92-f13f-411a-926b-98d279af3bc6",
+            "title": "Declutter Nightstand Drawer",
+            "category": "Room",
+            "description": null,
+            "priority": "blocking",
+            "created_at": "10-24-2025",
+            "deadline": "11-6-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "analysis"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "b9c25049-781d-4451-b653-5e99a1382547",
+            "title": "Declutter Nightstand Drawer",
+            "category": "Room",
+            "description": null,
+            "priority": "important",
+            "created_at": "10-24-2025",
+            "deadline": "11-11-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "a8d89447-af80-409a-b28e-9d30bf622239",
+            "title": "Read Chapter 9 of 'Thus Spoke Zarathustra'",
+            "category": "Reading",
+            "description": null,
+            "priority": "parked",
+            "created_at": "10-24-2025",
+            "deadline": "11-2-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "deep",
+                "urgent"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "bfba26c0-9c7d-40f5-85fd-5001c22c8e3f",
+                    "title": "Summarize insights from 'Being and Time'"
+                }
+            ]
+        },
+        {
+            "id": "ad1b8769-7b38-4c96-b914-066dc6ef922f",
+            "title": "Outline metaphysical model (4D Projection Hypothesis)",
+            "category": "Philosophy",
+            "description": null,
+            "priority": "essential",
+            "created_at": "10-24-2025",
+            "deadline": "11-8-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "2c0924a1-ce92-4f83-a567-1f55d7f3f650",
+            "title": "Annotate 'The Myth of Sisyphus'",
+            "category": "Reading",
+            "description": null,
+            "priority": "background",
+            "created_at": "10-24-2025",
+            "deadline": "11-18-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "28fa22a2-d60d-4032-9894-8929ba7220f2",
+            "title": "Grocery Shopping",
+            "category": "Life",
+            "description": null,
+            "priority": "parked",
+            "created_at": "10-24-2025",
+            "deadline": "11-14-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "writing"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "f81e20d9-7240-40e1-97e1-35fbb0048308",
+            "title": "Finish novel 'Crime and Punishment'",
+            "category": "Reading",
+            "description": null,
+            "priority": "background",
+            "created_at": "10-24-2025",
+            "deadline": "10-31-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "6ee337c1-6c43-4419-b46b-53d972e8ddb7",
+            "title": "Draft notes on Nietzsche\u2019s 'Genealogy of Morals'",
+            "category": "Philosophy",
+            "description": null,
+            "priority": "background",
+            "created_at": "10-24-2025",
+            "deadline": "11-18-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "urgent",
+                "analysis"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "99a9b045-06b4-4951-bb97-21208d60cd21",
+                    "title": "Revise Electrodynamics \u2014 Chapter 9"
+                }
+            ]
+        },
+        {
+            "id": "80b70136-2229-4dbe-b4e3-a7fceb6ca60f",
+            "title": "Outline metaphysical model (4D Projection Hypothesis)",
+            "category": "Philosophy",
+            "description": null,
+            "priority": "blocking",
+            "created_at": "10-24-2025",
+            "deadline": "10-28-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "writing"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "8ea7c407-b09f-42f0-9237-3fa33d0af07f",
+            "title": "Draft notes on Nietzsche\u2019s 'Genealogy of Morals'",
+            "category": "Philosophy",
+            "description": null,
+            "priority": "blocking",
+            "created_at": "10-24-2025",
+            "deadline": "11-1-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "urgent",
+                "writing"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "62032d7b-b65a-499b-bd58-6d77cc1211fe",
+                    "title": "Revise Electrodynamics \u2014 Chapter 8"
+                }
+            ]
+        },
+        {
+            "id": "223366e7-4c6c-42dd-a263-b4215349ef1d",
+            "title": "Summarize insights from 'Being and Time'",
+            "category": "Reading",
+            "description": null,
+            "priority": "parked",
+            "created_at": "10-24-2025",
+            "deadline": "10-27-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "writing",
+                "creative"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "299c2649-7fa7-4ace-bc79-bf1302f01011",
+                    "title": "Read Chapter 2 of 'Thus Spoke Zarathustra'"
+                }
+            ],
+            "dependancy_of": []
+        },
+        {
+            "id": "4d10258c-9c56-49a3-b578-5148b336c49e",
+            "title": "Implement LSTM Model for Decoding",
+            "category": "Fraunhofer",
+            "description": null,
+            "priority": "moderate",
+            "created_at": "10-24-2025",
+            "deadline": "11-11-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "687948ca-14da-4b43-86ad-c68e905a99ea",
+            "title": "Revise manuscript 'The Shadow and the Light'",
+            "category": "Philosophy",
+            "description": null,
+            "priority": "parked",
+            "created_at": "10-24-2025",
+            "deadline": "11-13-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "creative"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "b0d3aa27-3380-42c1-bb34-0a4a24247ac8",
+                    "title": "Draft notes on Nietzsche\u2019s 'Genealogy of Morals'"
+                }
+            ],
+            "dependancy_of": []
+        },
+        {
+            "id": "400ae6b5-ed9d-4dd2-9ad9-a48935a8ae9b",
+            "title": "Schedule dentist appointment",
+            "category": "Life",
+            "description": null,
+            "priority": "optional",
+            "created_at": "10-24-2025",
+            "deadline": "11-16-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "07ab539a-bc58-47bb-8d91-bcf5bbfbc0f4",
+            "title": "Annotate 'The Myth of Sisyphus'",
+            "category": "Reading",
+            "description": null,
+            "priority": "moderate",
+            "created_at": "10-24-2025",
+            "deadline": "11-15-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "deep",
+                "routine"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "3624d23f-8158-4056-ae81-cfb228834d82",
+            "title": "Cook dinner for Ronja",
+            "category": "Life",
+            "description": null,
+            "priority": "blocking",
+            "created_at": "10-24-2025",
+            "deadline": "11-1-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "8b81feeb-9fd9-4ea6-9216-22899a07a253",
+            "title": "Write Lab Report: Experiment 1",
+            "category": "University",
+            "description": null,
+            "priority": "background",
+            "created_at": "10-24-2025",
+            "deadline": "11-11-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "d891c9cb-4a04-4fd7-91f6-122440d188b3",
+                    "title": "Review Quantum Mechanics Notes"
+                }
+            ]
+        },
+        {
+            "id": "ee785419-c3f5-45f7-8cc7-ae7ff786d483",
+            "title": "Laundry",
+            "category": "Life",
+            "description": null,
+            "priority": "blocking",
+            "created_at": "10-24-2025",
+            "deadline": "10-27-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "health",
+                "urgent"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "1c96d0d6-779c-4c91-afb6-4e079ec91759",
+            "title": "Debug Quantum Decoder Module",
+            "category": "Fraunhofer",
+            "description": null,
+            "priority": "blocking",
+            "created_at": "10-24-2025",
+            "deadline": "11-21-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "urgent"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "e6c75bff-d76d-447d-a038-b5304d058a4b",
+            "title": "Laundry",
+            "category": "Life",
+            "description": null,
+            "priority": "important",
+            "created_at": "10-24-2025",
+            "deadline": "11-15-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "creative"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "b392b867-0fd4-46c0-b5ef-63ec23891d1a",
+            "title": "Laundry",
+            "category": "Life",
+            "description": null,
+            "priority": "optional",
+            "created_at": "10-24-2025",
+            "deadline": "11-23-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "analysis",
+                "routine"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "1f924dea-8788-4508-82a6-3ed0ebc2f078",
+            "title": "Run Evaluation on Validation Dataset",
+            "category": "Fraunhofer",
+            "description": null,
+            "priority": "moderate",
+            "created_at": "10-24-2025",
+            "deadline": "11-19-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "creative"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "2abddf81-1fd5-442a-b7a2-0d1ec0942489",
+            "title": "Solve HM3 Problem Set 7",
+            "category": "University",
+            "description": null,
+            "priority": "important",
+            "created_at": "10-24-2025",
+            "deadline": "11-7-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "routine"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "c317295e-eda1-45a0-909a-eeec9f36f7d9",
+                    "title": "Prepare for Theoretical Physics II \u2014 Lecture 5"
+                }
+            ],
+            "dependancy_of": []
+        },
+        {
+            "id": "299c2649-7fa7-4ace-bc79-bf1302f01011",
+            "title": "Read Chapter 2 of 'Thus Spoke Zarathustra'",
+            "category": "Reading",
+            "description": null,
+            "priority": "blocking",
+            "created_at": "10-24-2025",
+            "deadline": "11-6-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "deep",
+                "urgent"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "223366e7-4c6c-42dd-a263-b4215349ef1d",
+                    "title": "Summarize insights from 'Being and Time'"
+                }
+            ]
+        },
+        {
+            "id": "3f098184-9db1-4cd7-b278-bfec67755338",
+            "title": "Refactor Autoencoder Training Script",
+            "category": "Fraunhofer",
+            "description": null,
+            "priority": "essential",
+            "created_at": "10-24-2025",
+            "deadline": "11-11-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "creative"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "efa5ff1e-57c2-4164-b616-7cf46246b297",
+            "title": "Polish Writing Desk",
+            "category": "Room",
+            "description": null,
+            "priority": "important",
+            "created_at": "10-24-2025",
+            "deadline": "11-8-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "dde17425-0c69-4b30-928d-f564ccb2ff50",
+            "title": "Review Quantum Mechanics Notes",
+            "category": "University",
+            "description": null,
+            "priority": "parked",
+            "created_at": "10-24-2025",
+            "deadline": "11-21-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "urgent",
+                "writing"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "67557ceb-02b1-49df-aae1-33e09eca38ad",
+                    "title": "Write Lab Report: Experiment 3"
+                }
+            ],
+            "dependancy_of": []
+        },
+        {
+            "id": "eae775cc-5af0-4756-ba2c-2617f2103009",
+            "title": "Finish novel 'Crime and Punishment'",
+            "category": "Reading",
+            "description": null,
+            "priority": "parked",
+            "created_at": "10-24-2025",
+            "deadline": "10-25-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "008c4a57-30a1-4d45-ad04-c2ad574feb6e",
+            "title": "Refactor Autoencoder Training Script",
+            "category": "Fraunhofer",
+            "description": null,
+            "priority": "moderate",
+            "created_at": "10-24-2025",
+            "deadline": "11-9-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "creative"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "db76e555-471e-4091-ad5f-c12ab4e47ad7",
+            "title": "Organize Bookshelf \u2014 Section 3",
+            "category": "Room",
+            "description": null,
+            "priority": "moderate",
+            "created_at": "10-24-2025",
+            "deadline": "10-25-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "deep"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "aaf94a0f-271a-4516-8294-308d90ad4a91",
+                    "title": "Clean MacBook Screen and Keyboard"
+                }
+            ]
+        },
+        {
+            "id": "aaf94a0f-271a-4516-8294-308d90ad4a91",
+            "title": "Clean MacBook Screen and Keyboard",
+            "category": "Room",
+            "description": null,
+            "priority": "moderate",
+            "created_at": "10-24-2025",
+            "deadline": "11-16-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "writing",
+                "analysis"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "db76e555-471e-4091-ad5f-c12ab4e47ad7",
+                    "title": "Organize Bookshelf \u2014 Section 3"
+                }
+            ],
+            "dependancy_of": []
+        },
+        {
+            "id": "bfba26c0-9c7d-40f5-85fd-5001c22c8e3f",
+            "title": "Summarize insights from 'Being and Time'",
+            "category": "Reading",
+            "description": null,
+            "priority": "essential",
+            "created_at": "10-24-2025",
+            "deadline": "10-31-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "creative"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "a8d89447-af80-409a-b28e-9d30bf622239",
+                    "title": "Read Chapter 9 of 'Thus Spoke Zarathustra'"
+                }
+            ],
+            "dependancy_of": []
+        },
+        {
+            "id": "99a9b045-06b4-4951-bb97-21208d60cd21",
+            "title": "Revise Electrodynamics \u2014 Chapter 9",
+            "category": "University",
+            "description": null,
+            "priority": "blocking",
+            "created_at": "10-24-2025",
+            "deadline": "11-17-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "urgent"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "6ee337c1-6c43-4419-b46b-53d972e8ddb7",
+                    "title": "Draft notes on Nietzsche\u2019s 'Genealogy of Morals'"
+                }
+            ],
+            "dependancy_of": []
+        },
+        {
+            "id": "62032d7b-b65a-499b-bd58-6d77cc1211fe",
+            "title": "Revise Electrodynamics \u2014 Chapter 8",
+            "category": "University",
+            "description": null,
+            "priority": "background",
+            "created_at": "10-24-2025",
+            "deadline": "11-23-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "creative",
+                "urgent"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "8ea7c407-b09f-42f0-9237-3fa33d0af07f",
+                    "title": "Draft notes on Nietzsche\u2019s 'Genealogy of Morals'"
+                }
+            ],
+            "dependancy_of": []
+        },
+        {
+            "id": "659b0812-1c8c-4662-b7b0-242c0edf03c8",
+            "title": "Grocery Shopping",
+            "category": "Life",
+            "description": null,
+            "priority": "parked",
+            "created_at": "10-24-2025",
+            "deadline": "10-30-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "8d4a1cc5-30f1-4771-95c6-20195847ce7e",
+            "title": "Grocery Shopping",
+            "category": "Life",
+            "description": null,
+            "priority": "optional",
+            "created_at": "10-24-2025",
+            "deadline": "11-21-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "d6163c4e-12dc-4e89-976f-9dd1e313372a",
+            "title": "Organize Bookshelf \u2014 Section 10",
+            "category": "Room",
+            "description": null,
+            "priority": "essential",
+            "created_at": "10-24-2025",
+            "deadline": "11-12-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "urgent",
+                "analysis"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "925de199-33d3-4d64-8839-018cbb37e05a",
+            "title": "Review Quantum Mechanics Notes",
+            "category": "University",
+            "description": null,
+            "priority": "optional",
+            "created_at": "10-24-2025",
+            "deadline": "11-12-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "analysis",
+                "deep"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "00b75827-f4a8-4c7f-8256-584ddf43406b",
+            "title": "Draft notes on Nietzsche\u2019s 'Genealogy of Morals'",
+            "category": "Philosophy",
+            "description": null,
+            "priority": "optional",
+            "created_at": "10-24-2025",
+            "deadline": "11-16-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "creative"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "22db1dfa-2b03-42db-a4d4-a64e1a4f5fd3",
+            "title": "Outline metaphysical model (4D Projection Hypothesis)",
+            "category": "Philosophy",
+            "description": null,
+            "priority": "essential",
+            "created_at": "10-24-2025",
+            "deadline": "11-15-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "deep",
+                "routine"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "e6637ff6-e27a-4d7e-ab68-44209a7e5927",
+            "title": "Write essay: 'Freedom and Necessity'",
+            "category": "Philosophy",
+            "description": null,
+            "priority": "blocking",
+            "created_at": "10-24-2025",
+            "deadline": "11-8-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "analysis",
+                "urgent"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "4bde26e0-5835-482c-b630-58af8fc5b0cf",
+            "title": "Revise Electrodynamics \u2014 Chapter 4",
+            "category": "University",
+            "description": null,
+            "priority": "background",
+            "created_at": "10-24-2025",
+            "deadline": "11-2-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "6ab08e69-0eda-4105-adbc-274c1eb437ec",
+            "title": "Write essay: 'Freedom and Necessity'",
+            "category": "Philosophy",
+            "description": null,
+            "priority": "essential",
+            "created_at": "10-24-2025",
+            "deadline": "11-5-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "creative"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "00bc69b5-034f-4d96-ac55-37e25b46bb07",
+            "title": "Declutter Nightstand Drawer",
+            "category": "Room",
+            "description": null,
+            "priority": "optional",
+            "created_at": "10-24-2025",
+            "deadline": "11-3-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "writing",
+                "health"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "ff273e1f-a1b8-43bf-b46b-ba6f6ae88891",
+            "title": "Grocery Shopping",
+            "category": "Life",
+            "description": null,
+            "priority": "optional",
+            "created_at": "10-24-2025",
+            "deadline": "11-20-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "deep",
+                "health"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "c317295e-eda1-45a0-909a-eeec9f36f7d9",
+            "title": "Prepare for Theoretical Physics II \u2014 Lecture 5",
+            "category": "University",
+            "description": null,
+            "priority": "blocking",
+            "created_at": "10-24-2025",
+            "deadline": "11-22-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "2abddf81-1fd5-442a-b7a2-0d1ec0942489",
+                    "title": "Solve HM3 Problem Set 7"
+                }
+            ]
+        },
+        {
+            "id": "6f7304fc-0078-4114-863d-5efca6a098c6",
+            "title": "Finish novel 'Crime and Punishment'",
+            "category": "Reading",
+            "description": null,
+            "priority": "essential",
+            "created_at": "10-24-2025",
+            "deadline": "11-2-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "analysis"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "11547838-7ea5-4bba-967a-a8437d62a6f1",
+            "title": "Implement LSTM Model for Decoding",
+            "category": "Fraunhofer",
+            "description": null,
+            "priority": "important",
+            "created_at": "10-24-2025",
+            "deadline": "10-31-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "health",
+                "deep"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "927cc479-9a85-4116-8e67-ab63e45b91b4",
+            "title": "Cook dinner for Ronja",
+            "category": "Life",
+            "description": null,
+            "priority": "important",
+            "created_at": "10-24-2025",
+            "deadline": "11-22-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "ab58d462-a9a2-4ccd-8fd7-4e92d2f9dbf8",
+            "title": "Create Flashcards for HM3",
+            "category": "University",
+            "description": null,
+            "priority": "moderate",
+            "created_at": "10-24-2025",
+            "deadline": "11-20-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "urgent"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "67557ceb-02b1-49df-aae1-33e09eca38ad",
+            "title": "Write Lab Report: Experiment 3",
+            "category": "University",
+            "description": null,
+            "priority": "optional",
+            "created_at": "10-24-2025",
+            "deadline": "11-2-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "dde17425-0c69-4b30-928d-f564ccb2ff50",
+                    "title": "Review Quantum Mechanics Notes"
+                }
+            ]
+        },
+        {
+            "id": "b6ed562c-fe1b-47b5-b9f9-0208a88740bd",
+            "title": "Summarize insights from 'Being and Time'",
+            "category": "Reading",
+            "description": null,
+            "priority": "background",
+            "created_at": "10-24-2025",
+            "deadline": "11-16-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "analysis"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "76f4d106-0465-4e57-8472-1e55f12199b4",
+                    "title": "Read Google Nature 2024 Paper"
+                }
+            ],
+            "dependancy_of": []
+        },
+        {
+            "id": "358e1bd6-3704-478e-996c-95d9d2adfd74",
+            "title": "Solve HM3 Problem Set 2",
+            "category": "University",
+            "description": null,
+            "priority": "optional",
+            "created_at": "10-24-2025",
+            "deadline": "11-22-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "f65a7fc6-2aa3-4993-b01c-aa4cc952334b",
+            "title": "Grocery Shopping",
+            "category": "Life",
+            "description": null,
+            "priority": "parked",
+            "created_at": "10-24-2025",
+            "deadline": "11-5-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "analysis",
+                "creative"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        },
+        {
+            "id": "93942444-7544-4263-bf90-6b88e462c564",
+            "title": "Polish Writing Desk",
+            "category": "Room",
+            "description": null,
+            "priority": "blocking",
+            "created_at": "10-24-2025",
+            "deadline": "11-3-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "writing"
+            ],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": []
+        }
+    ]
+}
