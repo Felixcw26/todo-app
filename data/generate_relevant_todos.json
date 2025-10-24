@@ -7,16 +7,21 @@
             "description": null,
             "priority": "optional",
             "created_at": "10-24-2025",
-            "deadline": "11-2-2025",
+            "deadline": "10-24-2025",
             "done": false,
             "in_progress": false,
             "completed_at": null,
             "tags": [],
             "est_time": null,
             "actual_time": null,
-            "is_project": false,
+            "is_project": true,
             "overdue": false,
-            "dependencies": [],
+            "dependencies": [
+                {
+                    "id": "631e17c6-005c-4e88-a741-c8928571b0be",
+                    "title": "Refactor Autoencoder Training Script"
+                }
+            ],
             "dependancy_of": []
         },
         {
@@ -26,7 +31,7 @@
             "description": null,
             "priority": "optional",
             "created_at": "10-24-2025",
-            "deadline": "10-28-2025",
+            "deadline": "10-24-2025",
             "done": false,
             "in_progress": false,
             "completed_at": null,
@@ -39,7 +44,12 @@
             "is_project": false,
             "overdue": false,
             "dependencies": [],
-            "dependancy_of": []
+            "dependancy_of": [
+                {
+                    "id": "2218e841-3ab5-4075-9d87-e89c68ceff2d",
+                    "title": "Read Chapter 1 of 'Thus Spoke Zarathustra'"
+                }
+            ]
         },
         {
             "id": "053fc1e4-ee18-4292-8104-94b3806bc85f",
@@ -697,8 +707,8 @@
             "category": "Reading",
             "description": null,
             "priority": "background",
-            "created_at": "10-24-2025",
-            "deadline": "10-31-2025",
+            "created_at": "10-22-2025",
+            "deadline": "10-23-2025",
             "done": false,
             "in_progress": false,
             "completed_at": null,
@@ -743,8 +753,8 @@
             "category": "Philosophy",
             "description": null,
             "priority": "blocking",
-            "created_at": "10-24-2025",
-            "deadline": "10-28-2025",
+            "created_at": "10-22-2025",
+            "deadline": "10-23-2025",
             "done": false,
             "in_progress": false,
             "completed_at": null,
