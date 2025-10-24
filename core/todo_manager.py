@@ -363,6 +363,12 @@ class ToDoManager:
                 # Und weiter nach oben gehen
                 self._mark_undone_recursive(parent, visited)
     
+    def set_in_progress(self, title: str = None, id: str = None) -> None:
+        tasks = self.get_todo(title=title, id=id)
+        for task in tasks:
+            self.mark_undone(title=title, id=id)
+            task.set_in_progress()
+
     def update_todo_states(self):
         """
         Re-synchronize logical task states across the entire dependency graph.
