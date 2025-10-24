@@ -420,16 +420,20 @@ class ToDo:
 
     def mark_undone(self) -> None:
         """Revert a completed task to open status."""
-        if self.done:
+        if (self.done or self.in_progress) and not (self.is_project and self.is_unblocked()):
             self.done = False
             self.completed_at = None
             self.actual_time = None
-            self.in_progress = False
+            self.set_not_in_progress()
 
     def set_in_progress(self) -> None:
         """Set the ToDo in status in progress."""
-        if not self.done and not self.in_progress:
+        if (not self.done) and (not self.in_progress) and not (self.is_project and self.is_unblocked()):
             self.in_progress = True
+    
+    def set_not_in_progress(self) -> None:
+        if self.in_progress:
+            self.in_progress = False
 
     def is_overdue(self) -> bool:
         """Return True and set the attribute if the deadline has passed relative to today."""
