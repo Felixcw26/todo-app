@@ -1,0 +1,316 @@
+{
+    "todos": [
+        {
+            "id": "984737f2-8b97-47d4-9622-5d5ef415244a",
+            "title": "ExPhys4 \u2013 \u00dcbungsblatt 1",
+            "category": "University",
+            "description": null,
+            "priority": "important",
+            "created_at": "10-24-2025",
+            "deadline": "10-29-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "e3ab04ec-5df3-4421-b4da-08e265ed68d0",
+                    "title": "Aufgabe 1: Theoriefragen"
+                },
+                {
+                    "id": "dfb64f78-3601-4065-8529-6a662c6b2307",
+                    "title": "Aufgabe 2: Rechenaufgaben"
+                },
+                {
+                    "id": "2f99438b-dc1b-4b54-8bfc-86c4da4d1e97",
+                    "title": "Aufgabe 3: Bonusaufgabe"
+                }
+            ],
+            "dependancy_of": []
+        },
+        {
+            "id": "e3ab04ec-5df3-4421-b4da-08e265ed68d0",
+            "title": "Aufgabe 1: Theoriefragen",
+            "category": "University",
+            "description": null,
+            "priority": "important",
+            "created_at": "10-24-2025",
+            "deadline": "10-25-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "984737f2-8b97-47d4-9622-5d5ef415244a",
+                    "title": "ExPhys4 \u2013 \u00dcbungsblatt 1"
+                }
+            ]
+        },
+        {
+            "id": "dfb64f78-3601-4065-8529-6a662c6b2307",
+            "title": "Aufgabe 2: Rechenaufgaben",
+            "category": "University",
+            "description": null,
+            "priority": "important",
+            "created_at": "10-24-2025",
+            "deadline": "10-27-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "984737f2-8b97-47d4-9622-5d5ef415244a",
+                    "title": "ExPhys4 \u2013 \u00dcbungsblatt 1"
+                }
+            ]
+        },
+        {
+            "id": "2f99438b-dc1b-4b54-8bfc-86c4da4d1e97",
+            "title": "Aufgabe 3: Bonusaufgabe",
+            "category": "University",
+            "description": null,
+            "priority": "important",
+            "created_at": "10-24-2025",
+            "deadline": "10-28-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "984737f2-8b97-47d4-9622-5d5ef415244a",
+                    "title": "ExPhys4 \u2013 \u00dcbungsblatt 1"
+                }
+            ]
+        },
+        {
+            "id": "67486f34-9355-42cb-82ab-7884488b4283",
+            "title": "ExPhys4 \u2013 \u00dcbungsblatt 2",
+            "category": "University",
+            "description": null,
+            "priority": "important",
+            "created_at": "10-24-2025",
+            "deadline": "11-5-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "5740a160-a428-478a-a769-a2d79f3ef853",
+                    "title": "Aufgabe 1: Theoriefragen"
+                },
+                {
+                    "id": "2a349442-9d0e-4afc-bff5-2192eb5e3cc7",
+                    "title": "Aufgabe 2: Rechenaufgaben"
+                },
+                {
+                    "id": "618d1758-453c-4811-a658-3cc0760565ee",
+                    "title": "Aufgabe 3: Bonusaufgabe"
+                }
+            ],
+            "dependancy_of": []
+        },
+        {
+            "id": "5740a160-a428-478a-a769-a2d79f3ef853",
+            "title": "Aufgabe 1: Theoriefragen",
+            "category": "University",
+            "description": null,
+            "priority": "important",
+            "created_at": "10-24-2025",
+            "deadline": "11-1-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "67486f34-9355-42cb-82ab-7884488b4283",
+                    "title": "ExPhys4 \u2013 \u00dcbungsblatt 2"
+                }
+            ]
+        },
+        {
+            "id": "2a349442-9d0e-4afc-bff5-2192eb5e3cc7",
+            "title": "Aufgabe 2: Rechenaufgaben",
+            "category": "University",
+            "description": null,
+            "priority": "important",
+            "created_at": "10-24-2025",
+            "deadline": "11-3-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "67486f34-9355-42cb-82ab-7884488b4283",
+                    "title": "ExPhys4 \u2013 \u00dcbungsblatt 2"
+                }
+            ]
+        },
+        {
+            "id": "618d1758-453c-4811-a658-3cc0760565ee",
+            "title": "Aufgabe 3: Bonusaufgabe",
+            "category": "University",
+            "description": null,
+            "priority": "important",
+            "created_at": "10-24-2025",
+            "deadline": "11-4-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "67486f34-9355-42cb-82ab-7884488b4283",
+                    "title": "ExPhys4 \u2013 \u00dcbungsblatt 2"
+                }
+            ]
+        },
+        {
+            "id": "6b621291-24ff-48d9-9760-5dee22336941",
+            "title": "ExPhys4 \u2013 \u00dcbungsblatt 3",
+            "category": "University",
+            "description": null,
+            "priority": "important",
+            "created_at": "10-24-2025",
+            "deadline": "11-12-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [
+                {
+                    "id": "c49aaaec-65eb-42d4-9c76-6c08a8aa8de0",
+                    "title": "Aufgabe 1: Theoriefragen"
+                },
+                {
+                    "id": "4f1899ad-97c9-47bb-853a-ce2f6983a5af",
+                    "title": "Aufgabe 2: Rechenaufgaben"
+                },
+                {
+                    "id": "d94afda8-8925-4967-81a8-9e81d97dcef9",
+                    "title": "Aufgabe 3: Bonusaufgabe"
+                }
+            ],
+            "dependancy_of": []
+        },
+        {
+            "id": "c49aaaec-65eb-42d4-9c76-6c08a8aa8de0",
+            "title": "Aufgabe 1: Theoriefragen",
+            "category": "University",
+            "description": null,
+            "priority": "important",
+            "created_at": "10-24-2025",
+            "deadline": "11-8-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "6b621291-24ff-48d9-9760-5dee22336941",
+                    "title": "ExPhys4 \u2013 \u00dcbungsblatt 3"
+                }
+            ]
+        },
+        {
+            "id": "4f1899ad-97c9-47bb-853a-ce2f6983a5af",
+            "title": "Aufgabe 2: Rechenaufgaben",
+            "category": "University",
+            "description": null,
+            "priority": "important",
+            "created_at": "10-24-2025",
+            "deadline": "11-10-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "6b621291-24ff-48d9-9760-5dee22336941",
+                    "title": "ExPhys4 \u2013 \u00dcbungsblatt 3"
+                }
+            ]
+        },
+        {
+            "id": "d94afda8-8925-4967-81a8-9e81d97dcef9",
+            "title": "Aufgabe 3: Bonusaufgabe",
+            "category": "University",
+            "description": null,
+            "priority": "important",
+            "created_at": "10-24-2025",
+            "deadline": "11-11-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [],
+            "est_time": null,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "6b621291-24ff-48d9-9760-5dee22336941",
+                    "title": "ExPhys4 \u2013 \u00dcbungsblatt 3"
+                }
+            ]
+        }
+    ]
+}

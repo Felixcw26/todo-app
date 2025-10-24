@@ -1,0 +1,90 @@
+{
+    "automations": [
+        {
+            "id": "0ed96a7d-38b7-48bd-a093-65cdde03677e",
+            "title_pattern": "ExPhys4 \u2013 \u00dcbungsblatt {n}",
+            "category": "University",
+            "interval_days": 7,
+            "start_date": "10-22-2025",
+            "end_date": "12-1-2025",
+            "priority": "important",
+            "tags": [],
+            "parent_id": null,
+            "generated_todos": [
+                "984737f2-8b97-47d4-9622-5d5ef415244a",
+                "67486f34-9355-42cb-82ab-7884488b4283",
+                "6b621291-24ff-48d9-9760-5dee22336941"
+            ],
+            "last_generated_date": "11-5-2025",
+            "active": true,
+            "template_subtasks": [
+                {
+                    "todo": {
+                        "id": "28ad0347-ce5c-40c7-b9d6-dbb51c9790b1",
+                        "title": "Aufgabe 1: Theoriefragen",
+                        "category": "University",
+                        "description": null,
+                        "priority": "important",
+                        "created_at": "10-24-2025",
+                        "deadline": "10-25-2025",
+                        "done": false,
+                        "in_progress": false,
+                        "completed_at": null,
+                        "tags": [],
+                        "est_time": null,
+                        "actual_time": null,
+                        "is_project": false,
+                        "overdue": false,
+                        "dependencies": [],
+                        "dependancy_of": []
+                    },
+                    "offset_days": -4
+                },
+                {
+                    "todo": {
+                        "id": "fbd50b9c-272f-4941-9877-ee7e7f841e9f",
+                        "title": "Aufgabe 2: Rechenaufgaben",
+                        "category": "University",
+                        "description": null,
+                        "priority": "important",
+                        "created_at": "10-24-2025",
+                        "deadline": "10-25-2025",
+                        "done": false,
+                        "in_progress": false,
+                        "completed_at": null,
+                        "tags": [],
+                        "est_time": null,
+                        "actual_time": null,
+                        "is_project": false,
+                        "overdue": false,
+                        "dependencies": [],
+                        "dependancy_of": []
+                    },
+                    "offset_days": -2
+                },
+                {
+                    "todo": {
+                        "id": "e9c80d4b-de38-4b43-86fc-c272e3ccb35d",
+                        "title": "Aufgabe 3: Bonusaufgabe",
+                        "category": "University",
+                        "description": null,
+                        "priority": "important",
+                        "created_at": "10-24-2025",
+                        "deadline": "10-25-2025",
+                        "done": false,
+                        "in_progress": false,
+                        "completed_at": null,
+                        "tags": [],
+                        "est_time": null,
+                        "actual_time": null,
+                        "is_project": false,
+                        "overdue": false,
+                        "dependencies": [],
+                        "dependancy_of": []
+                    },
+                    "offset_days": -1
+                }
+            ]
+        }
+    ]
+}
