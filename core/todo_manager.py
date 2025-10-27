@@ -341,7 +341,7 @@ class ToDoManager:
                 # Rekursiv weiter nach oben
                 self._mark_done_recursive(parent, total_time, visited)
 
-    def mark_undone(self, title: str = None, id: str = None) -> None:
+    def mark_undone(self, title: str = None, id: str = None, control: bool = False) -> None:
         """
         Revert one or more ToDos (and *all* parent dependencies) to undone state.
 
@@ -351,16 +351,16 @@ class ToDoManager:
         """
         tasks = self.get_todo(title=title, id=id)
         for task in tasks:
-            self._mark_undone_recursive(task, visited=set())
+            self._mark_undone_recursive(task, visited=set(), control=control)
 
-    def _mark_undone_recursive(self, task, visited: set) -> None:
+    def _mark_undone_recursive(self, task, visited: set, control: bool = False) -> None:
         """Recursively revert task and all parents to undone."""
         if task.id in visited:
             return
         visited.add(task.id)
 
         # Diesen Task rückgängig machen
-        task.mark_undone()
+        task.mark_undone(control=control)
 
         # Alle direkten Parents rückgängig machen (egal ob Projekt oder nicht)
         for parent in task.dependency_of:
@@ -471,7 +471,7 @@ class ToDoManager:
     def automatic_status_update(self) -> None:
         for task in self.todos:
             if not task.is_unblocked() and (task.done or task.in_progress):
-                self.mark_undone(task.title, task.id)
+                self.mark_undone(task.title, task.id, control=True)
     
     def update_automations(self, today: Date = Date.today()):
         """Run all active automations and generate missed tasks."""
