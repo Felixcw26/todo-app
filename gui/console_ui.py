@@ -525,7 +525,7 @@ class ConsoleUI():
 
         # --- Render-Funktion: zeichnet NUR; keine Logik/State hier drin ---
         def render_screen(stdscr, header_segments, upper_frame, title_frame, middle_frame,
-                        rows_segments, lower_frame, footer_segments):
+                        rows_segments, padding_rows, padding_row, lower_frame, footer_segments):
             stdscr.erase()
             y = 0
             for seg in header_segments:
@@ -538,6 +538,10 @@ class ConsoleUI():
 
             for row in rows_segments:
                 self.render_segments(stdscr, y, row)
+                y += 1
+            
+            for _ in range(padding_rows):
+                self.render_segments(stdscr, y, padding_row)
                 y += 1
 
             self.render_segments(stdscr, y, lower_frame);   y += 1
@@ -754,9 +758,30 @@ class ConsoleUI():
                     ]
                     rows_segments.append(row)
 
+                padding_rows = max(0, visual_todos - len(rows_segments))
+
+                padding_row = [
+                    (s["EDGE_VERTICAL"], "IVORY", None),
+                        (f" {s['POINT_TRIANGLE']}" if line_selected == idx else f"  ", "WHITE", "BOLD"),
+                        (f" " + (lengths[0] - 1 + padding_left) * " ", "WHITE", "BOLD"),
+                        (s["EDGE_VERTICAL"], "IVORY", None),
+                        (f" " + (lengths[1] + 1) * " ", "WHITE", "ITALIC"),
+                        (s["EDGE_VERTICAL"], "IVORY", None),
+                        (f" " + (lengths[2] + 1) * " ", "WHITE", None),
+                        (s["EDGE_VERTICAL"], "IVORY", None),
+                        (f" " + (lengths[3] + 1) * " ", "WHITE", None),
+                        (s["EDGE_VERTICAL"], "IVORY", None),
+                        (f" "
+                        + (lengths[4] + 1) * " ", "WHITE", None),
+                        (s["EDGE_VERTICAL"], "IVORY", None),
+                        ((f" " + (lengths[5] + 1) * " "), "WHITE", None),
+                        (s["EDGE_VERTICAL"], "IVORY", None),
+                        (" " * padding_right + f" " + (lengths[6] + 1) * " ", "WHITE", "BOLD"),
+                        (s["EDGE_VERTICAL"], "IVORY", None)
+                ]
                 # --------- RENDER MIT AKTUELLER BREITE/HÖHE ----------
                 render_screen(stdscr, header_segments, upper_frame, title_frame,
-                            middle_frame, rows_segments[n:n+visual_todos], lower_frame, footer_segments)
+                            middle_frame, rows_segments[n:n+visual_todos], padding_rows, padding_row, lower_frame, footer_segments)
 
                 time.sleep(0.05)
 

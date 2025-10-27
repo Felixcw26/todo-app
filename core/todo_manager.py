@@ -473,11 +473,11 @@ class ToDoManager:
             if not task.is_unblocked() and (task.done or task.in_progress):
                 self.mark_undone(task.title, task.id, control=True)
     
-    def update_automations(self, today: Date = Date.today()):
+    def update_automations(self, today: Date = Date.today(), verbose: bool = False):
         """Run all active automations and generate missed tasks."""
         for automation in self.automations:
             new_tasks = automation.generate_due_tasks(self, today)
-            if new_tasks:
+            if new_tasks and verbose:
                 print(f"⚙️ Generated {len(new_tasks)} new tasks from {automation.title_pattern}")
 
     # -------------------------------------------------------------------------
@@ -730,7 +730,7 @@ class ToDoManager:
     # -------------------------------------------------------------------------
     # File I/O
     # -------------------------------------------------------------------------
-    def save(self, path: str) -> None:
+    def save(self, path: str, verbose: bool = False) -> None:
         """
         Save the entire manager (and all ToDos) to a JSON file.
 
@@ -741,10 +741,11 @@ class ToDoManager:
         """
         with open(path, "w", encoding="utf-8") as f:
             json.dump(self.to_dict(), f, indent=4)
-        print(f"✅ ToDoManager saved successfully → {path}")
+        if verbose:
+            print(f"✅ ToDoManager saved successfully → {path}")
 
     @classmethod
-    def load(cls, path: str) -> "ToDoManager":
+    def load(cls, path: str, verbose: bool = False) -> "ToDoManager":
         """
         Load a ToDoManager from a JSON file and reconstruct dependencies.
 
@@ -761,7 +762,8 @@ class ToDoManager:
         with open(path, "r", encoding="utf-8") as f:
             data = json.load(f)
         manager = cls.from_dict(data)
-        print(f"📂 ToDoManager loaded successfully ← {path}")
+        if verbose:
+            print(f"📂 ToDoManager loaded successfully ← {path}")
         manager.update_todo_states()
         return manager
     
@@ -810,7 +812,7 @@ class ToDoManager:
         data = json.loads(json_str)
         return cls.automations_from_dict(data)
 
-    def save_automations(self, path: str) -> None:
+    def save_automations(self, path: str, verbose: bool = False) -> None:
         """
         Save all automations in the manager to a separate JSON file.
 
@@ -821,9 +823,10 @@ class ToDoManager:
         """
         with open(path, "w", encoding="utf-8") as f:
             json.dump(self.automations_to_dict(), f, indent=4)
-        print(f"✅ Automations saved successfully → {path}")
+        if verbose:
+            print(f"✅ Automations saved successfully → {path}")
 
-    def load_automations(self, path: str) -> None:
+    def load_automations(self, path: str, verbose: bool = False) -> None:
         """
         Load all automations from a JSON file and reconstruct them.
 
@@ -836,5 +839,6 @@ class ToDoManager:
         with open(path, "r", encoding="utf-8") as f:
             data = json.load(f)
         self.automations = [AutomaticToDo.from_dict(ad) for ad in data.get("automations", [])]
-        print(f"📂 Automations loaded successfully ← {path}")
+        if verbose:
+            print(f"📂 Automations loaded successfully ← {path}")
         self.update_todo_states()
