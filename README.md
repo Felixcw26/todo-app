@@ -6,47 +6,52 @@ This repository contains a modular, fully object-oriented task management system
 It models tasks (`ToDo`) as interconnected objects with priorities, deadlines, dependencies, and persistence,  
 managed by a central `ToDoManager`.  
 
-The design is both **academic and aesthetic** — balancing logical structure with human usability.  
-It is built to evolve: from core logic to a console interface and later a full Tkinter GUI.
+The design emphasizes **academic rigor and aesthetic structure**, balancing logical clarity with maintainability.  
+Built to evolve, this project progresses from core logic to a console-based interface, with plans for a future Tkinter GUI.
 
 ---
 
 ## 🌿 Overview
 
-| Component | Description |
-|------------|-------------|
-| **`date_type.py`** | Custom date abstraction with validation, comparison, and arithmetic — a lightweight replacement for `datetime`. |
+| Component         | Description                                                                 |
+|-------------------|-----------------------------------------------------------------------------|
+| **`date_type.py`** | Custom date abstraction with validation, comparison, and arithmetic — a lightweight alternative to `datetime`. |
 | **`todo_type.py`** | Defines `ToDo` and `Priority` — core entities representing tasks or projects with dependencies, deadlines, and tags. |
 | **`todo_manager.py`** | Central controller for creating, managing, updating, serializing, and linking all tasks. |
-| **`console_gui.py`** *(planned)* | Command-line interface for managing and visualizing tasks interactively. |
-| **`tk_gui.py`** *(planned)* | A full graphical interface using **Tkinter**, designed with a dark, academic aesthetic. |
+| **`console_ui.py`** | Current console-based interface using `curses` for task management and visualization. |
+| **`tk_gui.py`**    | Planned graphical interface using Tkinter (future development).             |
 
 ---
 
 ## 🧩 Design Principles
 
-- **Pure OOP structure** — clear class boundaries, no procedural shortcuts  
-- **Bidirectional dependency system** — projects can depend on subtasks (and vice versa)  
-- **JSON persistence** — tasks can be saved and reloaded seamlessly  
-- **Extendable modules** — new features can be plugged in easily (CLI, GUI, analytics, etc.)  
-- **Readable, elegant code** — designed for maintainability and clarity  
+- **Pure OOP Structure** — Clear class boundaries with no procedural shortcuts.
+- **Bidirectional Dependency System** — Tasks and projects can depend on each other.
+- **JSON Persistence** — Seamless saving and loading of tasks (e.g., `.todos.json`).
+- **Extendable Modules** — Designed for future enhancements (CLI, GUI, analytics).
+- **Readable, Elegant Code** — Prioritizes maintainability and clarity.
 
 ---
 
-## 🚀 Current Features
+## 🚀 Current Features (Alpha v0.1.0)
 
 ### ✅ `ToDo`
-- Core attributes: title, category, description, priority, deadline, tags, estimated & actual time  
-- Logical relationships: `dependencies` and `dependancy_of`  
-- Methods: `mark_done()`, `extend_deadline()`, `add_dependency()`, `is_overdue()`, etc.  
-- Serialization: `to_dict()`, `to_json()`, `from_dict()`, `from_json()`  
+- Core attributes: title, category, description, priority, deadline, tags, estimated & actual time.
+- Logical relationships: `dependencies` and `dependency_of`.
+- Methods: `mark_done()`, `extend_deadline()`, `add_dependency()`, `is_overdue()`, etc.
+- Serialization: `to_dict()`, `to_json()`, `from_dict()`, `from_json()`.
 
 ### ✅ `ToDoManager`
-- CRUD: add, remove, update, clear  
-- Sorting & filtering by priority, category, or deadline  
-- Dependency linking and completion propagation  
-- JSON persistence (`save()` and `load()`)  
-- Basic statistics (`stats()`, `average_completion_time()`)  
+- CRUD operations: add, remove, update, clear.
+- Sorting and filtering by priority, category, or deadline.
+- Dependency linking and completion propagation.
+- JSON persistence via `save()` and `load()`.
+- Basic statistics (e.g., `stats()`, `average_completion_time()`).
+
+### ✅ `console_ui.py`
+- Terminal-based interface using `curses` for interactive task management.
+- Supports adding tasks (e.g., `add_standard_todo`) with categories and priorities.
+- Displays task lists and basic navigation.
 
 ---
 
@@ -67,12 +72,13 @@ if __name__ == "__main__":
     manager.add_todo(t2)
 
     # Save to file
-    manager.save("todos.json")
+    manager.save("data/.todos.json")
 
     # Load again
-    new_manager = ToDoManager.load("todos.json")
+    new_manager = ToDoManager.load("data/.todos.json")
     print(new_manager.list_all())
-```
+````
+
 ---
 
 ## 🔁 Project Phases (Roadmap)
@@ -80,9 +86,9 @@ if __name__ == "__main__":
 | Phase | Description | Status |
 |--------|--------------|--------|
 | **I. Core Architecture** | `Date`, `Priority`, `ToDo`, `ToDoManager` | ✅ Done |
-| **II. ConsoleGUI** | Interactive CLI interface for creating and managing tasks | 🟡 In progress |
-| **III. Tkinter GUI** | Full graphical user interface (Dark Academia aesthetic) | 🔜 Planned |
-| **IV. Extensions** | Export, analytics, notifications, data sync | 🔜 Planned |
+| **II. Console UI** | `console_ui.py` with `curses` interface | 🟡 In progress |
+| **III. Tkinter GUI** | Full graphical interface | 🔜 Planned |
+| **IV. Extensions** | Export, analytics, notifications | 🔜 Planned |
 
 ---
 
@@ -112,33 +118,17 @@ todo-app/
 
 ---
 
-## 🧱 Planned Additions
-
-### `console_gui.py`
-Interactive shell for task management:
-```bash
-add "Write report" -c University -p important
-done "Write report"
-list --sort deadline
-stats
-```
-
-### `tk_gui.py`
-Graphical interface features
-
-- Sidebar for categories & filters
-- Main view with color-coded tasks
-- Detail view for description, dependencies, and timing
-- Optional Dark Academia theme with serif fonts and warm color palette
-
---- 
-
 ## ⚙️ Installation
 
 ```bash
 git clone https://github.com/Felixcw26/todo-app.git
 cd todo-app
-python3 todo_manager.py
+# Activate Conda environment (if using Conda)
+conda activate todo
+# Install dependencies
+pip install -r requirements.txt
+# Run the app
+python todo_manager.py
 ```
 
 ---
@@ -149,27 +139,46 @@ python3 todo_manager.py
 - Python ≥ 3.11
 
 **Dependencies:**  
-This project is lightweight and mostly uses the standard library.  
-Only the following external packages are required:
+This project leverages the Python standard library and a few external packages. Install them via:
 
 ```bash
-pip install numpy DateTime
+pip install -r requirements.txt
 ```
 
 **Installed dependencies (via `pip list`):**
 
-| Package | Version | Purpose |
-|----------|----------|----------|
-| `numpy` | ≥ 2.3 | numerical operations and date math |
-| `DateTime` | ≥ 5.5 | enhanced datetime handling (used in `DateType`) |
+| Package             | Version  | Purpose                                      |
+|----------------------|-----------|----------------------------------------------|
+| `DateTime`           | 5.5       | Enhanced datetime handling for `DateType`.     |
+| `linkify-it-py`      | 2.0.3     | URL processing (optional utility).           |
+| `markdown-it-py`     | 4.0.0     | Markdown rendering (documentation).          |
+| `mdit-py-plugins`    | 0.5.0     | Markdown plugin support.                     |
+| `mdurl`              | 0.1.2     | URL parsing for Markdown.                    |
+| `numpy`              | 2.3.3     | Numerical operations and date math.          |
+| `pip`                | 25.2      | Package manager.                             |
+| `platformdirs`       | 4.5.0     | Platform-specific directory handling.        |
+| `Pygments`           | 2.19.2    | Syntax highlighting (documentation).         |
+| `pyobjc`             | 12.0      | macOS-specific framework (optional).         |
+| `pytz`               | 2025.2    | Timezone support.                            |
+| `rich`               | 14.2.0    | Rich text formatting (optional UI).          |
+| `setuptools`         | 78.1.1    | Build and package management.                |
+| `textual`            | 6.3.0     | Terminal UI enhancements (optional).         |
+| `typing`             | 3.7.4.3   | Type hints for better code clarity.          |
+| `typing_extensions`  | 4.15.0    | Extended type hints.                         |
+| `uc-micro-py`        | 1.0.3     | Unicode micro-parsing (Markdown).            |
+| `uuid`               | 1.30      | Unique identifier generation.                |
+| `wcwidth`            | 0.2.14    | Terminal character width handling.           |
+| `wheel`              | 0.45.1    | Package building.                            |
+| `zope.interface`     | 8.0.1     | Interface definitions (optional).            |
 
-All other packages (`uuid`, `typing`, `pytz`, `zope.interface`) are automatically installed as dependencies.
+
+**Note**: The `pyobjc` family of packages (e.g., `pyobjc-framework-*`) is macOS-specific and may not be required for all platforms. They are included due to your macOS environment.
 
 --- 
 
 ## 🧠 Philosophy
 
-This project is more than a ToDo app — it’s a system for structured thinking.
+This project transcends a simple ToDo app — it’s a system for structured thinking.
 Each task is a node, each dependency a logical link, forming a personal graph of intention.
 
 > *"Structure is freedom in form."*
@@ -180,11 +189,15 @@ Each task is a node, each dependency a logical link, forming a personal graph of
 
 **Felix Christoph Winkler**
 
-Physics student, developer, and admirer of structured aesthetics.
-Combines theoretical clarity with creative design in every project.
+Physics student, developer, and advocate of structured aesthetics.
+Combines theoretical precision with creative design in every project.
 
 ---
 
 ## 📜 License
 
 MIT License © 2025 Felix Winkler
+
+## 📢 Feedback
+
+We welcome your feedback! Please report issues or suggest enhancements via the GitHub Issues page.
