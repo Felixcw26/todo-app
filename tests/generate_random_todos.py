@@ -50,20 +50,20 @@ if __name__ == "__main__":
                 pass  # skip invalid or circular dependencies
 
     # --- Save to JSON ---
-    manager.save(FILE_PATH + "data/generate_random_todos.json")
+    manager.save(FILE_PATH + "tests/data/generate_random_todos.json")
     print("✅ Saved 100 tasks to 'todos.json'.")
 
     # --- Load again ---
-    new_manager = ToDoManager.load(FILE_PATH + "data/generate_random_todos.json")
+    new_manager = ToDoManager.load(FILE_PATH + "tests/data/generate_random_todos.json")
     print(f"✅ Loaded {len(new_manager.todos)} tasks from file.")
 
     # --- Optional: quick stats ---
     stats = new_manager.stats()
     print("Stats:", stats)
 
-    new_manager.save(FILE_PATH + "data/generate_random_todos.json")
+    new_manager.save(FILE_PATH + "tests/data/generate_random_todos.json")
 
     # --- Check file size ---
     import os
-    size_kb = os.path.getsize(FILE_PATH + "data/generate_random_todos.json") / 1024
+    size_kb = os.path.getsize(FILE_PATH + "tests/data/generate_random_todos.json") / 1024
     print(f"📦 JSON file size: {size_kb:.2f} KB")

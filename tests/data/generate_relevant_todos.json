@@ -95,28 +95,6 @@
             "dependancy_of": []
         },
         {
-            "id": "45aad75b-30c8-4d18-a948-56a074aabdb4",
-            "title": "Laundry",
-            "category": "Life",
-            "description": null,
-            "priority": "optional",
-            "created_at": "10-24-2025",
-            "deadline": "11-14-2025",
-            "done": false,
-            "in_progress": false,
-            "completed_at": null,
-            "tags": [
-                "analysis",
-                "routine"
-            ],
-            "est_time": null,
-            "actual_time": null,
-            "is_project": false,
-            "overdue": false,
-            "dependencies": [],
-            "dependancy_of": []
-        },
-        {
             "id": "9a970b11-c510-45dd-82af-dcf79b2cf0dd",
             "title": "Read Google Nature 2024 Paper",
             "category": "Fraunhofer",
@@ -243,25 +221,6 @@
                 "writing",
                 "deep"
             ],
-            "est_time": null,
-            "actual_time": null,
-            "is_project": false,
-            "overdue": false,
-            "dependencies": [],
-            "dependancy_of": []
-        },
-        {
-            "id": "ca82bd8b-86b0-4b7a-a316-31bb2626ce8c",
-            "title": "Laundry",
-            "category": "Life",
-            "description": null,
-            "priority": "optional",
-            "created_at": "10-24-2025",
-            "deadline": "10-27-2025",
-            "done": false,
-            "in_progress": false,
-            "completed_at": null,
-            "tags": [],
             "est_time": null,
             "actual_time": null,
             "is_project": false,
@@ -952,28 +911,6 @@
             ]
         },
         {
-            "id": "ee785419-c3f5-45f7-8cc7-ae7ff786d483",
-            "title": "Laundry",
-            "category": "Life",
-            "description": null,
-            "priority": "blocking",
-            "created_at": "10-24-2025",
-            "deadline": "10-27-2025",
-            "done": false,
-            "in_progress": false,
-            "completed_at": null,
-            "tags": [
-                "health",
-                "urgent"
-            ],
-            "est_time": null,
-            "actual_time": null,
-            "is_project": false,
-            "overdue": false,
-            "dependencies": [],
-            "dependancy_of": []
-        },
-        {
             "id": "1c96d0d6-779c-4c91-afb6-4e079ec91759",
             "title": "Debug Quantum Decoder Module",
             "category": "Fraunhofer",
@@ -1007,28 +944,6 @@
             "completed_at": null,
             "tags": [
                 "creative"
-            ],
-            "est_time": null,
-            "actual_time": null,
-            "is_project": false,
-            "overdue": false,
-            "dependencies": [],
-            "dependancy_of": []
-        },
-        {
-            "id": "b392b867-0fd4-46c0-b5ef-63ec23891d1a",
-            "title": "Laundry",
-            "category": "Life",
-            "description": null,
-            "priority": "optional",
-            "created_at": "10-24-2025",
-            "deadline": "11-23-2025",
-            "done": false,
-            "in_progress": false,
-            "completed_at": null,
-            "tags": [
-                "analysis",
-                "routine"
             ],
             "est_time": null,
             "actual_time": null,

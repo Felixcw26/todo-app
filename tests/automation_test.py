@@ -35,13 +35,13 @@ def main():
 
     print("Manager speichern!")
 
-    manager.save_automations("/Users/felixcipher/Documents/coding/todo-app/data/test_automations.json")
-    manager.save("/Users/felixcipher/Documents/coding/todo-app/data/automation_test_todos.json")
+    manager.save_automations("/Users/felixcipher/Documents/coding/todo-app/tests/data/test_automations.json")
+    manager.save("/Users/felixcipher/Documents/coding/todo-app/tests/data/automation_test_todos.json")
 
     print("Manager laden!")
 
-    manager2 = ToDoManager.load("/Users/felixcipher/Documents/coding/todo-app/data/automation_test_todos.json")
-    manager2.load_automations("/Users/felixcipher/Documents/coding/todo-app/data/test_automations.json")
+    manager2 = ToDoManager.load("/Users/felixcipher/Documents/coding/todo-app/tests/data/automation_test_todos.json")
+    manager2.load_automations("/Users/felixcipher/Documents/coding/todo-app/tests/data/test_automations.json")
 
     print("Manager geladen!")
 
@@ -55,8 +55,8 @@ def main():
     for t in manager2.todos:
          print(t)
 
-    manager2.save_automations("/Users/felixcipher/Documents/coding/todo-app/data/test_automations.json")
-    manager2.save("/Users/felixcipher/Documents/coding/todo-app/data/automation_test_todos.json")
+    manager2.save_automations("/Users/felixcipher/Documents/coding/todo-app/tests/data/test_automations.json")
+    manager2.save("/Users/felixcipher/Documents/coding/todo-app/tests/data/automation_test_todos.json")
 
 if __name__ == "__main__":
     main()

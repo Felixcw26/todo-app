@@ -128,11 +128,11 @@ if __name__ == "__main__":
                 pass
 
     # --- Save ---
-    manager.save(FILE_PATH + "data/generate_relevant_todos.json")
+    manager.save(FILE_PATH + "tests/data/generate_relevant_todos.json")
     print("✅ Saved realistic tasks to 'generate_relevant_todos.json'.")
 
     # --- Load again ---
-    new_manager = ToDoManager.load(FILE_PATH + "data/generate_relevant_todos.json")
+    new_manager = ToDoManager.load(FILE_PATH + "tests/data/generate_relevant_todos.json")
     print(f"✅ Loaded {len(new_manager.todos)} tasks from file.")
 
     # --- Quick Stats ---
@@ -140,9 +140,9 @@ if __name__ == "__main__":
     print("📊 Stats:", stats)
 
     # --- Resave for consistency ---
-    new_manager.save(FILE_PATH + "data/generate_relevant_todos.json")
+    new_manager.save(FILE_PATH + "tests/data/generate_relevant_todos.json")
 
     # --- File size check ---
     import os
-    size_kb = os.path.getsize(FILE_PATH + "data/generate_relevant_todos.json") / 1024
+    size_kb = os.path.getsize(FILE_PATH + "tests/data/generate_relevant_todos.json") / 1024
     print(f"📦 JSON file size: {size_kb:.2f} KB")
