@@ -315,6 +315,7 @@ class ToDo:
         dependencies: Optional[list["ToDo"]] = None,
         dependancy_of: list["ToDo"] = None,
         is_project: bool = False,
+        updated: int = 0,
         id: Optional[str] = None
     ):
         self.title = title
@@ -349,7 +350,7 @@ class ToDo:
         self.dependancy_of = dependancy_of or []
         self.is_project = is_project
         self.id = id or self._generate_id()
-        self.updated = 0
+        self.updated = updated
 
         self.overdue = self.deadline < Date.today()
 
@@ -428,12 +429,11 @@ class ToDo:
 
     def set_in_progress(self) -> None:
         """Set the ToDo in status in progress."""
-        if (not self.done) and (not self.in_progress) and not (self.is_project and self.is_unblocked()):
+        if (not self.done) and (not self.in_progress) and self.is_unblocked():
             self.in_progress = True
     
     def set_not_in_progress(self) -> None:
-        if self.in_progress:
-            self.in_progress = False
+        self.in_progress = False
 
     def is_overdue(self) -> bool:
         """Return True and set the attribute if the deadline has passed relative to today."""
@@ -656,6 +656,7 @@ class ToDo:
             "actual_time": self.actual_time,
             "is_project": self.is_project,
             "overdue": self.overdue,
+            "updated": self.updated,
             "dependencies": [
                 {"id": dep.id, "title": dep.title} for dep in self.dependencies
             ],
@@ -702,6 +703,7 @@ class ToDo:
             dependencies=[],  # will be re-linked
             dependancy_of=[],
             is_project=data.get("is_project", False),
+            updated=data.get("updated"),
             id=data.get("id")
         )
 
