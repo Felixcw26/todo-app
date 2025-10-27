@@ -100,7 +100,16 @@ class Date:
         str
             The date formatted as 'month-day-year'.
         """
-        return f"{self.month}-{self.day}-{self.year}"
+        if self.month < 10:
+            if self.day < 10:
+                return f"0{self.month}-0{self.day}-{self.year}"
+            else:
+                return f"0{self.month}-{self.day}-{self.year}"
+        else:
+            if self.day < 10:
+                return f"{self.month}-0{self.day}-{self.year}"
+            else:
+                return f"{self.month}-{self.day}-{self.year}"
 
     def __bool__(self) -> bool:
         """
@@ -224,8 +233,8 @@ class Date:
         return cls(d.month, d.day, d.year)
     
     @classmethod
-    def from_string(cls, s: str, fmt: str = "%m-%d-%Y") -> "Date":
+    def from_string(cls, string: str, fmt: str = "%m-%d-%Y") -> "Date":
         """Parse a date string using the given format."""
-        from datetime import datetime
-        d = datetime.strptime(s, fmt).date()
-        return cls(d.month, d.day, d.year)
+        parts = string.split("-")
+        month, day, year = parts
+        return cls(int(month), int(day), int(year))
