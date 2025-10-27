@@ -704,7 +704,7 @@ class ToDo:
             dependancy_of=[],
             is_project=data.get("is_project", False),
             updated=data.get("updated"),
-            id=data.get("id")
+            id=data.get("id") or cls._generate_id()
         )
 
         todo.overdue = data.get("overdue", False)
