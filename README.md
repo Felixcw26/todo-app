@@ -50,7 +50,7 @@ Built to evolve, this project progresses from core logic to a console-based inte
 
 ### ✅ `console_ui.py`
 - Terminal-based interface using `curses` for interactive task management.
-- Supports adding tasks (e.g., `add_standard_todo`) with categories and priorities.
+- Supports adding and changing tasks (e.g., `add_standard_todo`) with categories and priorities.
 - Displays task lists and basic navigation.
 
 ---
@@ -97,23 +97,46 @@ if __name__ == "__main__":
 ```
 todo-app/
 │
+├── core/
+|   ├── __init__.py
+|   ├── automatic_todo.py
+|   ├── date_type.py
+|   ├── key_listener.py
+|   ├── todo_manager.py
+|   └── todo_type.py
+|
 ├── data/
-|   └── todos.json
+|   ├── .automations.json
+|   └── .todos.json
 |
 ├── gui/
-|   ├── console_gui.py # (planned)
+|   ├── __init__.py
+|   ├── console_gui.py
+|   ├── dark_academia_theme.py
 |   └── tk_gui.py # (planned)
 |
 ├── tests/
-|   └── generate_random_todos.py
+|   ├── data/
+|   |   ├── automation_test_todos.json
+|   |   ├── generate_random_todos.json
+|   |   ├── generate_relevant_todos.json
+|   |   └── test_automations.json
+|   |
+|   ├── automation_test.py
+|   ├── console_test.py
+|   ├── generate_random_todos.py
+|   ├── generate_relevant_todos.py
+|   ├── keylistener_test.py
+|   ├── sorting_test.py
+|   └── theme_test.py
 |
+├── __init__.py 
 ├── .gitignore
-├── date_type.py
 ├── LICENSE
+├── main.py
 ├── README.md
 ├── requirements.txt
-├── todo_manager.py
-└── todo_type.py
+└── requirements.txt
 ```
 
 ---
