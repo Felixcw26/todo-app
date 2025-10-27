@@ -308,8 +308,6 @@ class ConsoleUI():
 
     def run(self):
         self.load()
-        for task in self.todo_manager.todos:
-            print(task)
         self.home_menu()
         self.save()
 
