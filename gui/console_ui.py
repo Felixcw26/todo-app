@@ -284,34 +284,40 @@ class ConsoleUI():
                 "e": [f"{self.theme.palette.SYMBOLS['WRITING']} (E) Edit ToDo", self.standard_todo],
                 "s": [f"{self.theme.palette.SYMBOLS['GLASS']} (S) Show ToDo", self.show_todo_menu],
                 "c": [f"{self.theme.palette.SYMBOLS['CLIP']} (C) Change Status", self.change_status],
-                "backspace": [f"{self.theme.palette.SYMBOLS['LEFT_ARROW']} ({self.theme.palette.SYMBOLS['BACKSPACE']}) Go backck", lambda: self.back.pop(-1)()]
+                "backspace": [f"{self.theme.palette.SYMBOLS['LEFT_ARROW']} ({self.theme.palette.SYMBOLS['BACKSPACE']}) Go backck", lambda: self._safe_back()]
             },
             "change_status_menu": {
-                "enter": [f"{self.theme.palette.SYMBOLS['PEN']} ({self.theme.palette.SYMBOLS['ENTER']}) Submit", lambda: self.back.pop(-1)()],
-                "backspace": [f"{self.theme.palette.SYMBOLS['LEFT_ARROW']} ({self.theme.palette.SYMBOLS['BACKSPACE']}) Go back", lambda: self.back.pop(-1)()]
+                "enter": [f"{self.theme.palette.SYMBOLS['PEN']} ({self.theme.palette.SYMBOLS['ENTER']}) Submit", lambda: self._safe_back()],
+                "backspace": [f"{self.theme.palette.SYMBOLS['LEFT_ARROW']} ({self.theme.palette.SYMBOLS['BACKSPACE']}) Go back", lambda: self._safe_back()]
             },
             "add_todo_start": {
                 "enter": [f"{self.theme.palette.SYMBOLS['PEN']} ({self.theme.palette.SYMBOLS['ENTER']}) Submit", self.get_next_add_menu],
-                "backspace": [f"{self.theme.palette.SYMBOLS['LEFT_ARROW']} ({self.theme.palette.SYMBOLS['BACKSPACE']}) Go back", lambda: self.back.pop(-1)()]
+                "backspace": [f"{self.theme.palette.SYMBOLS['LEFT_ARROW']} ({self.theme.palette.SYMBOLS['BACKSPACE']}) Go back", lambda: self._safe_back()]
             },
             "standard_todo": {
                 "i": [f"{self.theme.palette.SYMBOLS['WRITING']} (I) Enable Input", None],
                 "esc": [f"{self.theme.palette.SYMBOLS['WRITING']} (Esc) Disable Input", None],
                 "enter": [f"{self.theme.palette.SYMBOLS['PEN']} ({self.theme.palette.SYMBOLS['ENTER']}) Submit", None],
-                "backspace": [f"{self.theme.palette.SYMBOLS['LEFT_ARROW']} ({self.theme.palette.SYMBOLS['BACKSPACE']}) Go back", lambda: self.back.pop(-1)()]
+                "backspace": [f"{self.theme.palette.SYMBOLS['LEFT_ARROW']} ({self.theme.palette.SYMBOLS['BACKSPACE']}) Go back", lambda: self._safe_back()]
             },
             "dropdown_input": {
                 "enter": [f"{self.theme.palette.SYMBOLS['PEN']} ({self.theme.palette.SYMBOLS['ENTER']}) Submit", None],
-                "backspace": [f"{self.theme.palette.SYMBOLS['LEFT_ARROW']} ({self.theme.palette.SYMBOLS['BACKSPACE']}) Go back", lambda: self.back.pop(-1)()]
+                "backspace": [f"{self.theme.palette.SYMBOLS['LEFT_ARROW']} ({self.theme.palette.SYMBOLS['BACKSPACE']}) Go back", lambda: self._safe_back()]
             }
         }
 
     def run(self):
-        if Path(self.save_paths[0]).exists() and Path(self.save_paths[1]).exists():
-            self.load()
+        self.load()
+        for task in self.todo_manager.todos:
+            print(task)
         self.home_menu()
-
         self.save()
+
+    def _safe_back(self):
+        if self.back:
+            fn = self.back.pop(-1)
+            if callable(fn):
+                fn()
 
     def render_segments(self, stdscr, y, segments):
         """Zeile segmentweise mit Farben/Stilen ausgeben (robust gegen Überlauf)."""
@@ -544,7 +550,8 @@ class ConsoleUI():
         with CursesKeyListener() as listener:
             stdscr = listener.stdscr
             Palette.init_colors()
-            self.save()
+            if self.todo_manager.todos:
+                self.save()
 
             while True:
                 self.todo_manager.update_automations()
@@ -629,7 +636,7 @@ class ConsoleUI():
                     max([len(t.priority.name) for t in todos] + [len("Priority")]),
                     max([len(t.category) for t in todos] + [len("Category")]),
                     max([len(f"{t.get_est_time()[0]}h{t.get_est_time()[-1]}min") for t in todos] + [len("Estimated Time")]),
-                    max([len(t.dependancy_of[0].title) if t.dependancy_of else 0 for t in todos] + [len("Dependency of")]),
+                    max([len(t.dependency_of[0].title) if t.dependency_of else 0 for t in todos] + [len("Dependency of")]),
                     max([len(t.get_status()) for t in todos] + [len("Status")]),
                 ]
 
@@ -688,7 +695,7 @@ class ConsoleUI():
                     (s["EDGE_VERTICAL"], "IVORY", None),
                     (f" Estimated Time" + (lengths[4] - len("Estimated Time") + 1) * " ", "WHITE", "BOLD"),
                     (s["EDGE_VERTICAL"], "IVORY", None),
-                    (f" Dependancy of" + (lengths[5] - len("Dependancy of") + 1) * " ", "WHITE", "BOLD"),
+                    (f" Dependency of" + (lengths[5] - len("Dependency of") + 1) * " ", "WHITE", "BOLD"),
                     (s["EDGE_VERTICAL"], "IVORY", None),
                     (" " * padding_right + f" Status" + (lengths[6] - len("Status") + 1) * " ", "WHITE", "BOLD"),
                     (s["EDGE_VERTICAL"], "IVORY", None)
@@ -739,8 +746,8 @@ class ConsoleUI():
                         (f" {task.get_est_time()[0]}h{task.get_est_time()[-1]}min"
                         + (lengths[4] - len(f"{task.get_est_time()[0]}h{task.get_est_time()[-1]}min") + 1) * " ", "WHITE", None),
                         (s["EDGE_VERTICAL"], "IVORY", None),
-                        ((f" {task.dependancy_of[0].title}" + (lengths[5] - len(task.dependancy_of[0].title) + 1) * " ")
-                        if task.dependancy_of else (" " * (lengths[5] + 2)), "WHITE", None),
+                        ((f" {task.dependency_of[0].title}" + (lengths[5] - len(task.dependency_of[0].title) + 1) * " ")
+                        if task.dependency_of else (" " * (lengths[5] + 2)), "WHITE", None),
                         (s["EDGE_VERTICAL"], "IVORY", None),
                         (" " * padding_right + f" {task.get_status()}" + (lengths[6] - len(task.get_status()) + 1) * " ", status_color, "BOLD"),
                         (s["EDGE_VERTICAL"], "IVORY", None)
@@ -909,7 +916,10 @@ class ConsoleUI():
             
         else:
             category = dict["category"]
-            priority = dict["priority"]
+            if type(dict["priority"]) == Priority:
+                priority = dict["priority"].name
+            elif type(dict["priority"]) == str:
+                priority = dict["priority"]
             est_time = dict["est_time"]
 
             if type(est_time) == float:
@@ -926,10 +936,10 @@ class ConsoleUI():
                 inputs["deadline"] = MaskedInputField("mm-dd-yyyy", default_value=dict["deadline"])
             inputs["est_time"] = MaskedInputField("00h00min", default_value=default_est_time)
             inputs["tags"].text = ", ".join(dict["tags"])
-            if type(dict["dependancy_of"]) == list:
-                inputs["dependency"].text = dict["dependancy_of"][0]["title"] if dict["dependancy_of"] else ""
-            elif type(dict["dependancy_of"]) == str:
-                inputs["dependency"].text = dict["dependancy_of"]
+            if type(dict["dependency_of"]) == list:
+                inputs["dependency"].text = dict["dependency_of"][0]["title"] if dict["dependency_of"] else ""
+            elif type(dict["dependency_of"]) == str:
+                inputs["dependency"].text = dict["dependency_of"]
             inputs["description"].text = dict["description"]
 
         # --- Zuordnung: Grid-Position -> Feldname ---
@@ -1010,8 +1020,8 @@ class ConsoleUI():
                             # try:
                                 new_todo = ToDo.from_dict(todo_dict)
                                 self.todo_manager.add_todo(new_todo)
-                                if inputs["dependency"].text:
-                                    self.todo_manager.add_dependancy_of(new_todo, title=inputs["dependency"].text)
+                                if inputs["dependency"].text in [task.title for task in self.todo_manager.todos]:
+                                    self.todo_manager.add_dependency_of(new_todo, title=inputs["dependency"].text)
                                 self.back.pop(-1)
                                 self.main_menu()
                             # except Exception as e:
@@ -1020,10 +1030,12 @@ class ConsoleUI():
                         else:
                             # try:
                                 self.todo_manager.update_todo(todo_dict, dict["title"], dict["id"])
-                                if inputs["dependency"].text:
-                                    for task in self.todo_manager.get_todo(title=inputs["dependency"].text):
-                                        if task not in self.todo_manager.get_todo(todo_dict["title"], dict["id"])[0]:
-                                            self.todo_manager.add_dependancy_of(self.todo_manager.get_todo(todo_dict["title"], dict["id"]), title=inputs["dependency"].text)
+                                if inputs["dependency"].text and inputs["dependency"] != (dict["dependency_of"][0]["title"] if dict["dependency_of"] else ""):
+                                    self.todo_manager.get_todo(todo_dict["title"], dict["id"])[0].dependency_of = []
+                                    if inputs["dependency"].text in [task.title for task in self.todo_manager.todos]:
+                                        self.todo_manager.get_todo(todo_dict["title"], dict["id"])[0].dependency_of = [self.todo_manager.get_todo(title=inputs["dependency"].text)[0]]
+                                self.back.pop(-1)
+                                self.main_menu()
                             # except Exception as e:
                                 # import tkinter.messagebox; tkinter.messagebox.showerror("Fehler", str(e))
 
@@ -1082,7 +1094,7 @@ class ConsoleUI():
                                 "priority": priority,
                                 "est_time": inputs["est_time"].get_display_text(),
                                 "tags": inputs["tags"].text.split(", "), 
-                                "dependancy_of": inputs["dependency"].text,
+                                "dependency_of": inputs["dependency"].text,
                                 "description": inputs["description"].text,
                                 "is_project": is_project
                             }
@@ -1514,8 +1526,11 @@ class ConsoleUI():
         return
     
     def load(self):
-        self.todo_manager.load(self.save_paths[0])
-        self.todo_manager.load_automations(self.save_paths[1])
+        todo_path, automation_path = self.save_paths
+        self.todo_manager = self.todo_manager.load(path=todo_path)
+        self.todo_manager.load_automations(path=automation_path)
+
     def save(self):
-        self.todo_manager.save(self.save_paths[0])
-        self.todo_manager.save_automations(self.save_paths[1])
+        todo_path, automation_path = self.save_paths
+        self.todo_manager.save(path=todo_path)
+        self.todo_manager.save_automations(path=automation_path)

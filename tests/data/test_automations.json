@@ -6,7 +6,7 @@
             "category": "University",
             "interval_days": 7,
             "start_date": "10-22-2025",
-            "end_date": "12-1-2025",
+            "end_date": "12-01-2025",
             "priority": "important",
             "tags": [],
             "parent_id": null,
@@ -15,7 +15,7 @@
                 "67486f34-9355-42cb-82ab-7884488b4283",
                 "6b621291-24ff-48d9-9760-5dee22336941"
             ],
-            "last_generated_date": "11-5-2025",
+            "last_generated_date": "11-05-2025",
             "active": true,
             "template_subtasks": [
                 {
@@ -35,8 +35,9 @@
                         "actual_time": null,
                         "is_project": false,
                         "overdue": false,
+                        "updated": null,
                         "dependencies": [],
-                        "dependancy_of": []
+                        "dependency_of": []
                     },
                     "offset_days": -4
                 },
@@ -57,8 +58,9 @@
                         "actual_time": null,
                         "is_project": false,
                         "overdue": false,
+                        "updated": null,
                         "dependencies": [],
-                        "dependancy_of": []
+                        "dependency_of": []
                     },
                     "offset_days": -2
                 },
@@ -79,8 +81,9 @@
                         "actual_time": null,
                         "is_project": false,
                         "overdue": false,
+                        "updated": null,
                         "dependencies": [],
-                        "dependancy_of": []
+                        "dependency_of": []
                     },
                     "offset_days": -1
                 }

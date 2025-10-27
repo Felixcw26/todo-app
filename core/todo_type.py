@@ -4,7 +4,7 @@ import uuid
 from typing import Optional, Any
 import json
 
-class DependancyError(Exception):
+class DependencyError(Exception):
     """Raised when an invalid dependency is created or used."""
     def __init__(self, task: "ToDo", reason: str = ""):
         self.task = task
@@ -265,7 +265,7 @@ class ToDo:
 
     add_dependency()
         Add another ToDo as a prerequisite.
-    remove_dependancy()
+    remove_dependency()
         Remove an existing dependency.
     remove_all_dependencies():
         Remove all dependencies recursively.
@@ -277,10 +277,10 @@ class ToDo:
         Recursively return all dependencies as a nested dictionary tree.
     depends_on():
         Return True if this task (directly or indirectly) depends on `other`.
-    get_dependants():
+    get_dependents():
         Return all tasks that depend on this one.
     is_root_task():
-        Return True if this task has no dependants (nothing depends on it).
+        Return True if this task has no dependents (nothing depends on it).
     is_leaf_task():
         Return True if this task has no dependencies (depends on nothing).
 
@@ -313,7 +313,7 @@ class ToDo:
         est_time: Optional[float] = None,
         actual_time: Optional[float] = None,
         dependencies: Optional[list["ToDo"]] = None,
-        dependancy_of: list["ToDo"] = None,
+        dependency_of: list["ToDo"] = None,
         is_project: bool = False,
         updated: int = 0,
         id: Optional[str] = None
@@ -347,7 +347,7 @@ class ToDo:
         self.est_time = est_time
         self.actual_time = actual_time
         self.dependencies = dependencies or []
-        self.dependancy_of = dependancy_of or []
+        self.dependency_of = dependency_of or []
         self.is_project = is_project
         self.id = id or self._generate_id()
         self.updated = updated
@@ -362,8 +362,20 @@ class ToDo:
         return (
             f"ToDo(title='{self.title}', "
             f"category='{self.category}', "
+            f"description='{self.description}', "
             f"priority='{self.priority.name}', "
+            f"created_at='{repr(self.created_at)}', "
+            f"deadline='{repr(self.deadline)}', "
+            f"in_progress={self.in_progress}, "
             f"done={self.done}, "
+            f"completed_at='{repr(self.completed_at)}', "
+            f"tags={self.tags}, "
+            f"est_time={self.est_time}, "
+            f"actual_time={self.actual_time}, "
+            f"dependendencies={self.dependencies}, "
+            f"is_project={self.is_project}, "
+            f"overdue={self.overdue}, "
+            f"updated={self.updated}, "
             f"id='{self.id[:8]}...')"
         )
 
@@ -503,29 +515,29 @@ class ToDo:
     
         Raises
         ------
-        DependancyError:
-            When itself is added as a dependancy.
+        DependencyError:
+            When itself is added as a dependency.
             
-            When circular dependancy is trying to be added.
+            When circular dependency is trying to be added.
 
-            When task is already a dependancy of another task.
+            When task is already a dependency of another task.
         """
         if task is self:
-            raise DependancyError(task, "Cannot contain itself as dependency.")
+            raise DependencyError(task, "Cannot contain itself as dependency.")
         if task.depends_on(self):
-            raise DependancyError(task, "Circular reference detected.")
-        if task.dependancy_of:
-            raise DependancyError(task, f"'{task.title}' is already a dependency of another task.")
+            raise DependencyError(task, "Circular reference detected.")
+        if task.dependency_of:
+            raise DependencyError(task, f"'{task.title}' is already a dependency of another task.")
         if task not in self.dependencies:
             self.dependencies.append(task)
-            task.dependancy_of.append(self)
+            task.dependency_of.append(self)
 
-    def remove_dependancy(self, task: "ToDo") -> None:
+    def remove_dependency(self, task: "ToDo") -> None:
         """Remove a dependency if present."""
         if task in self.dependencies:
             self.dependencies.remove(task)
-            if self in task.dependancy_of:
-                task.dependancy_of.remove(self)
+            if self in task.dependency_of:
+                task.dependency_of.remove(self)
         
     def remove_all_dependencies(self, visited: set = None) -> set:
         """
@@ -542,13 +554,13 @@ class ToDo:
         for dep in list(self.dependencies):
             removed.add(dep)
             removed.update(dep.remove_all_dependencies(visited))
-            if self in dep.dependancy_of:
-                dep.dependancy_of.remove(self)
+            if self in dep.dependency_of:
+                dep.dependency_of.remove(self)
         self.dependencies.clear()
         return removed
     
     def is_unblocked(self) -> bool:
-        """Checks if undone dependancies exist."""
+        """Checks if undone dependencies exist."""
         for task in self.dependencies:
             if task.done:
                 continue
@@ -613,13 +625,13 @@ class ToDo:
             stack.extend(current.dependencies)
         return False
 
-    def get_dependants(self) -> list["ToDo"]:
+    def get_dependents(self) -> list["ToDo"]:
         """Return all tasks that depend on this one."""
-        return self.dependancy_of
+        return self.dependency_of
 
     def is_root_task(self) -> bool:
-        """Return True if this task has no dependants (nothing depends on it)."""
-        return not self.dependancy_of
+        """Return True if this task has no dependents (nothing depends on it)."""
+        return not self.dependency_of
 
     def is_leaf_task(self) -> bool:
         """Return True if this task has no dependencies (depends on nothing)."""
@@ -632,7 +644,7 @@ class ToDo:
         """
         Convert the ToDo into a fully serializable dictionary representation.
 
-        Dependencies and dependants are stored as lists of dictionaries containing
+        Dependencies and dependents are stored as lists of dictionaries containing
         both `id` and `title` for robust reconstruction.
 
         Returns
@@ -660,8 +672,8 @@ class ToDo:
             "dependencies": [
                 {"id": dep.id, "title": dep.title} for dep in self.dependencies
             ],
-            "dependancy_of": [
-                {"id": dep.id, "title": dep.title} for dep in self.dependancy_of
+            "dependency_of": [
+                {"id": dep.id, "title": dep.title} for dep in self.dependency_of
             ]
         }
 
@@ -670,7 +682,7 @@ class ToDo:
         """
         Reconstruct a ToDo object from a serialized dictionary.
 
-        Dependencies and dependants are initially stored as ID-title pairs and must
+        Dependencies and dependents are initially stored as ID-title pairs and must
         later be resolved by the ToDoManager via `link_dependencies`.
 
         Parameters
@@ -701,7 +713,7 @@ class ToDo:
             est_time=data.get("est_time"),
             actual_time=data.get("actual_time"),
             dependencies=[],  # will be re-linked
-            dependancy_of=[],
+            dependency_of=[],
             is_project=data.get("is_project", False),
             updated=data.get("updated"),
             id=data.get("id") or cls._generate_id()
@@ -712,8 +724,8 @@ class ToDo:
 
         # Temporarily store unresolved references (IDs & titles)
         todo._dependency_refs = data.get("dependencies", [])
-        todo._dependant_refs = data.get("dependancy_of", [])
-
+        todo._dependent_refs = data.get("dependency_of", [])
+        
         return todo
 
     def to_json(self, indent: int = 4) -> str:

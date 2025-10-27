@@ -81,15 +81,15 @@ class ToDoManager:
         Recompute and store `task.overdue` for all tasks.
     link_dependencies()
         Resolve flat dependency names loaded from serialized data into live
-        object references and build inverse relationships (`dependancy_of`).
+        object references and build inverse relationships (`dependency_of`).
     get_unblocked_tasks()
         Return tasks for which all dependencies are completed.
-    get_dependants()
+    get_dependents()
         Return tasks that act as parents (i.e., have at least one dependency).
     get_leaf_tasks()
         Return tasks with no dependencies (leaves in the dependency graph).
     get_root_tasks()
-        Return tasks with no dependants (no parent projects).
+        Return tasks with no dependents (no parent projects).
     stats()
         Compute collection statistics:
         {
@@ -128,6 +128,8 @@ class ToDoManager:
         self.todos: list[ToDo] = []
         self.automations: list[AutomaticToDo] = []
 
+    def __len__(self):
+        return len(self.todos)
     # -------------------------------------------------------------------------
     # Core CRUD Operations
     # -------------------------------------------------------------------------
@@ -303,7 +305,12 @@ class ToDoManager:
         todo = matches[0]
         for key, value in attributes.items():
             if hasattr(todo, key):
-                setattr(todo, key, value)
+                if key == "priority" and type(value) == str:
+                    setattr(todo, key, Priority(value))
+                elif key in ["created_at", "deadline", "completed_at"] and type(value) == str:
+                    setattr(todo, key, Date.from_string(value))
+                else:
+                    setattr(todo, key, value)
             else:
                 raise AttributeError(f"'{type(todo).__name__}' object has no attribute '{key}'")
 
@@ -325,7 +332,7 @@ class ToDoManager:
         task.mark_done(actual_time)
 
         # Check parents
-        for parent in task.dependancy_of:
+        for parent in task.dependency_of:
             if parent.is_project and parent.is_unblocked():
                 # Summe der tatsächlichen Zeiten der Kinder
                 total_time = sum(dep.actual_time or 0 for dep in parent.dependencies)
@@ -356,7 +363,7 @@ class ToDoManager:
         task.mark_undone()
 
         # Alle direkten Parents rückgängig machen (egal ob Projekt oder nicht)
-        for parent in task.dependancy_of:
+        for parent in task.dependency_of:
             # Falls Parent bereits undone ist, überspringen
             if parent.done or parent.in_progress:
                 parent.mark_undone()
@@ -381,7 +388,7 @@ class ToDoManager:
         1. **Downward correction**:
         If a task is marked as done but *not unblocked* (i.e., one or more
         dependencies are undone), it is automatically reverted to undone,
-        and this change propagates recursively to all its parent dependants.
+        and this change propagates recursively to all its parent dependents.
 
         2. **Upward propagation**:
         If a project is not yet marked as done but *is unblocked* (i.e., all
@@ -421,7 +428,7 @@ class ToDoManager:
             elif not task.done and task.is_project and task.is_unblocked():
                 self.mark_done(title=task.title, id=task.id)
     
-    def add_dependancy_of(self, todo: ToDo, title: str = None, id: str = None) -> None:
+    def add_dependency_of(self, todo: ToDo, title: str = None, id: str = None) -> None:
         """Declare that another ToDo depends on this one.
 
         Parameters
@@ -559,7 +566,7 @@ class ToDoManager:
         Resolve flat dependency references after loading serialized data.
 
         Re-links `ToDo.dependencies` and builds inverse relationships
-        (`dependancy_of`) for bidirectional traversal.
+        (`dependency_of`) for bidirectional traversal.
         """
         title_map = {t.title: t for t in self.todos}
         for task in self.todos:
@@ -571,15 +578,15 @@ class ToDoManager:
                 ]
                 delattr(task, "_dependency_names")
             for dep in task.dependencies:
-                if task not in dep.dependancy_of:
-                    dep.dependancy_of.append(task)
+                if task not in dep.dependency_of:
+                    dep.dependency_of.append(task)
         self.update_todo_states()
 
     def get_unblocked_tasks(self) -> list[ToDo]:
         """Return all tasks whose dependencies are fully completed."""
         return [task for task in self.todos if task.is_unblocked()]
 
-    def get_dependants(self) -> list[ToDo]:
+    def get_dependents(self) -> list[ToDo]:
         """Return all tasks that act as parent projects for others."""
         return [task for task in self.todos if not task.is_leaf_task()]
 
@@ -588,7 +595,7 @@ class ToDoManager:
         return [task for task in self.todos if task.is_leaf_task()]
 
     def get_root_tasks(self) -> list[ToDo]:
-        """Return all top-level tasks that have no dependants."""
+        """Return all top-level tasks that have no dependents."""
         return [task for task in self.todos if task.is_root_task()]
 
     # -------------------------------------------------------------------------
@@ -691,23 +698,22 @@ class ToDoManager:
         manager = cls()
         manager.todos = [ToDo.from_dict(td) for td in data.get("todos", [])]
 
-        # Build ID-based lookup for relinking
-        id_map = {t.id: t for t in manager.todos}
-
         for task in manager.todos:
             # Resolve dependencies
             if hasattr(task, "_dependency_refs"):
-                task.dependencies = [
-                    id_map.get(ref["id"]) for ref in task._dependency_refs if ref["id"] in id_map
-                ]
+                for dependency_ref in task._dependency_refs:
+                    task.dependencies.append(
+                        manager.get_todo(**dependency_ref)[0]
+                    )
                 delattr(task, "_dependency_refs")
 
-            # Resolve dependants
-            if hasattr(task, "_dependant_refs"):
-                task.dependancy_of = [
-                    id_map.get(ref["id"]) for ref in task._dependant_refs if ref["id"] in id_map
-                ]
-                delattr(task, "_dependant_refs")
+            # Resolve dependents
+            if hasattr(task, "_dependent_refs"):
+                for dependent_ref in task._dependent_refs:
+                    task.dependency_of.append(
+                        manager.get_todo(**dependent_ref)[0]
+                    )
+                delattr(task, "_dependent_refs")
 
         return manager
 

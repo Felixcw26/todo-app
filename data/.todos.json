@@ -36,7 +36,7 @@
                     "title": "Pushing the alpha version of this app"
                 }
             ],
-            "dependancy_of": []
+            "dependency_of": []
         },
         {
             "id": "73fc4fcf-9456-4488-b7e8-ac523d2671e1",
@@ -61,7 +61,7 @@
             "overdue": false,
             "updated": null,
             "dependencies": [],
-            "dependancy_of": [
+            "dependency_of": [
                 {
                     "id": "7ed469b6-3310-495b-ae4b-788e5a12b59f",
                     "title": "ToDo - App"
@@ -75,7 +75,7 @@
             "description": "",
             "priority": "important",
             "created_at": "10-27-2025",
-            "deadline": "11-03-2025",
+            "deadline": "11-04-2025",
             "done": false,
             "in_progress": false,
             "completed_at": null,
@@ -91,7 +91,7 @@
             "overdue": false,
             "updated": null,
             "dependencies": [],
-            "dependancy_of": [
+            "dependency_of": [
                 {
                     "id": "7ed469b6-3310-495b-ae4b-788e5a12b59f",
                     "title": "ToDo - App"
@@ -121,7 +121,7 @@
             "overdue": false,
             "updated": null,
             "dependencies": [],
-            "dependancy_of": [
+            "dependency_of": [
                 {
                     "id": "7ed469b6-3310-495b-ae4b-788e5a12b59f",
                     "title": "ToDo - App"
