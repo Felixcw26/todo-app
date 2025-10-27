@@ -358,7 +358,7 @@ class ToDoManager:
         # Alle direkten Parents rückgängig machen (egal ob Projekt oder nicht)
         for parent in task.dependancy_of:
             # Falls Parent bereits undone ist, überspringen
-            if parent.done:
+            if parent.done or parent.in_progress:
                 parent.mark_undone()
                 # Und weiter nach oben gehen
                 self._mark_undone_recursive(parent, visited)
@@ -421,6 +421,33 @@ class ToDoManager:
             elif not task.done and task.is_project and task.is_unblocked():
                 self.mark_done(title=task.title, id=task.id)
     
+    def add_dependancy_of(self, todo: ToDo, title: str = None, id: str = None) -> None:
+        """Declare that another ToDo depends on this one.
+
+        Parameters
+        ----------
+        todo : ToDo
+            The ToDo that acts as the prerequisite (dependency).
+        title : str, optional
+            The title of the dependent ToDo.
+        id : str, optional
+            The unique ID of the dependent ToDo.
+
+        Raises
+        ------
+        ValueError
+            If no matching ToDo was found or if multiple matches exist.
+        """
+        parents = self.get_todo(title=title, id=id)
+        if not parents:
+            raise ValueError(f"No ToDo found for title={title!r}, id={id!r}.")
+        if len(parents) > 1:
+            raise ValueError(f"Multiple ToDos found for title={title!r}, id={id!r}. "
+                            "Expected exactly one match.")
+
+        parent = parents[0]
+        parent.add_dependency(todo)
+
     def automatic_priority_update(self) -> None:
         """Automatic priority update based on days left till deadline."""
         for task in self.todos:
@@ -433,6 +460,11 @@ class ToDoManager:
             elif task.is_overdue() and Date.today() - task.deadline == -1 and task.updated <= 2:
                 task.update_priority(1)
                 task.updated += 1
+    
+    def automatic_status_update(self) -> None:
+        for task in self.todos:
+            if not task.is_unblocked() and (task.done or task.in_progress):
+                self.mark_undone(task.title, task.id)
     
     def update_automations(self, today: Date = Date.today()):
         """Run all active automations and generate missed tasks."""
