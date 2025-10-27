@@ -1,0 +1,132 @@
+{
+    "todos": [
+        {
+            "id": "7ed469b6-3310-495b-ae4b-788e5a12b59f",
+            "title": "ToDo - App",
+            "category": "University",
+            "description": "This ToDo is for the implementation of this very ToDo-App. The goal is to finish and publish the first or maybe even second version of this App until the end of the year 2025.",
+            "priority": "important",
+            "created_at": "10-27-2025",
+            "deadline": "12-31-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "coding",
+                "python",
+                "github",
+                "learning"
+            ],
+            "est_time": 99.98333333333333,
+            "actual_time": null,
+            "is_project": true,
+            "overdue": false,
+            "updated": null,
+            "dependencies": [
+                {
+                    "id": "73fc4fcf-9456-4488-b7e8-ac523d2671e1",
+                    "title": "Implementation of Show ToDo"
+                },
+                {
+                    "id": "58fee1cc-5cf6-4ff4-8233-de2fb21b4bab",
+                    "title": "Implementation of Show Automations"
+                },
+                {
+                    "id": "e3fd94ff-29e6-4969-9956-322d95c94fd9",
+                    "title": "Pushing the alpha version of this app"
+                }
+            ],
+            "dependancy_of": []
+        },
+        {
+            "id": "73fc4fcf-9456-4488-b7e8-ac523d2671e1",
+            "title": "Implementation of Show ToDo",
+            "category": "University",
+            "description": "",
+            "priority": "moderate",
+            "created_at": "10-27-2025",
+            "deadline": "11-03-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "coding",
+                "python",
+                "learning",
+                "style"
+            ],
+            "est_time": 5.0,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "updated": null,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "7ed469b6-3310-495b-ae4b-788e5a12b59f",
+                    "title": "ToDo - App"
+                }
+            ]
+        },
+        {
+            "id": "58fee1cc-5cf6-4ff4-8233-de2fb21b4bab",
+            "title": "Implementation of Show Automations",
+            "category": "University",
+            "description": "",
+            "priority": "important",
+            "created_at": "10-27-2025",
+            "deadline": "11-03-2025",
+            "done": false,
+            "in_progress": false,
+            "completed_at": null,
+            "tags": [
+                "coding",
+                "python",
+                "github",
+                "style"
+            ],
+            "est_time": 6.0,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "updated": null,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "7ed469b6-3310-495b-ae4b-788e5a12b59f",
+                    "title": "ToDo - App"
+                }
+            ]
+        },
+        {
+            "id": "e3fd94ff-29e6-4969-9956-322d95c94fd9",
+            "title": "Pushing the alpha version of this app",
+            "category": "University",
+            "description": "",
+            "priority": "essential",
+            "created_at": "10-27-2025",
+            "deadline": "10-27-2025",
+            "done": true,
+            "in_progress": false,
+            "completed_at": "10-27-2025",
+            "tags": [
+                "coding",
+                "github",
+                "app",
+                "python"
+            ],
+            "est_time": 0.03333333333333333,
+            "actual_time": null,
+            "is_project": false,
+            "overdue": false,
+            "updated": null,
+            "dependencies": [],
+            "dependancy_of": [
+                {
+                    "id": "7ed469b6-3310-495b-ae4b-788e5a12b59f",
+                    "title": "ToDo - App"
+                }
+            ]
+        }
+    ]
+}
