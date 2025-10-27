@@ -50,7 +50,7 @@ Built to evolve, this project progresses from core logic to a console-based inte
 
 ### ✅ `console_ui.py`
 - Terminal-based interface using `curses` for interactive task management.
-- Supports adding and changing tasks (e.g., `add_standard_todo`) with categories and priorities.
+- Supports adding and changing tasks (e.g., `standard_todo`) with categories and priorities.
 - Displays task lists and basic navigation.
 
 ---
