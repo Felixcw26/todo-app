@@ -106,8 +106,6 @@ todo-app/
 |   └── todo_type.py
 |
 ├── data/
-|   ├── .automations.json
-|   └── .todos.json
 |
 ├── gui/
 |   ├── __init__.py
