@@ -20,7 +20,8 @@ class AutomaticToDo:
         end_date: Optional[Date] = None,
         parent: Optional[ToDo] = None,
         priority: Optional[Priority] = None,
-        tags: Optional[list[str]] = None,
+        description: Optional[str] = None,
+        tags: Optional[list[str]] = None
     ):
         self.id = str(uuid.uuid4())
         self.title_pattern = title_pattern
@@ -30,6 +31,7 @@ class AutomaticToDo:
         self.end_date = end_date
         self.parent = parent
         self.priority = priority or Priority("normal")
+        self.description = description
         self.tags = tags or []
 
         # Template-Subtasks definieren (werden bei jedem Zyklus geklont)
@@ -71,6 +73,7 @@ class AutomaticToDo:
                 category=self.category,
                 priority=self.priority,
                 deadline=deadline,
+                description=self.description,
                 tags=self.tags,
             )
             parent_todo.source_automation_id = self.id
